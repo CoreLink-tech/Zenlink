@@ -28,10 +28,12 @@
 
   --border-strong: rgba(255,255,255,.16);
 
-  --accent: #dfff4f;
+  --accent: #e3b873;
 
   --accent-soft:
-    rgba(223,255,79,.08);
+    rgba(227,184,115,.08);
+
+  --hero-navy: #101d30;
 
   --max-width: 1200px;
 
@@ -69,10 +71,10 @@ body.light {
   --border-strong:
     rgba(0,0,0,.16);
 
-  --accent: #87a900;
+  --accent: #a9741d;
 
   --accent-soft:
-    rgba(135,169,0,.09);
+    rgba(169,116,29,.09);
 
 }
 
@@ -609,6 +611,69 @@ nav.scrolled {
 
   padding:
     140px 0 90px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(8,10,14,.5) 0%,
+      rgba(8,10,14,.78) 60%,
+      var(--bg) 97%
+    ),
+    linear-gradient(
+      100deg,
+      rgba(8,10,14,.96) 0%,
+      rgba(10,14,20,.75) 38%,
+      rgba(16,29,48,.35) 70%,
+      rgba(16,29,48,.15) 100%
+    ),
+    url("assets/img/hero-bg.jpg");
+
+  background-size:
+    cover,
+    cover,
+    cover;
+
+  background-position:
+    center,
+    center,
+    75% center;
+
+  background-repeat:
+    no-repeat;
+
+}
+
+
+body.light .hero {
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(244,245,241,.55) 0%,
+      rgba(244,245,241,.85) 60%,
+      var(--bg) 97%
+    ),
+    linear-gradient(
+      100deg,
+      rgba(244,245,241,.94) 0%,
+      rgba(244,245,241,.8) 38%,
+      rgba(244,245,241,.4) 70%,
+      rgba(244,245,241,.15) 100%
+    ),
+    url("assets/img/hero-bg.jpg");
+
+  background-size:
+    cover,
+    cover,
+    cover;
+
+  background-position:
+    center,
+    center,
+    75% center;
+
+  background-repeat:
+    no-repeat;
 
 }
 
@@ -1167,6 +1232,72 @@ nav.scrolled {
     1.1fr .9fr;
 
   gap: 90px;
+
+}
+
+
+.about-portrait {
+
+  position: relative;
+
+  width: 220px;
+
+  margin-bottom: 40px;
+
+  border-radius: var(--radius);
+
+  overflow: hidden;
+
+  border:
+    1px solid var(--border-strong);
+
+  box-shadow:
+    0 30px 60px -20px rgba(0,0,0,.55);
+
+}
+
+
+.about-portrait img {
+
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  aspect-ratio: 3 / 4;
+
+  object-fit: cover;
+
+  filter:
+    grayscale(1)
+    contrast(1.05);
+
+}
+
+
+.about-portrait figcaption {
+
+  position: absolute;
+
+  left: 14px;
+
+  bottom: 12px;
+
+  color: var(--accent);
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size: 10px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.5px;
+
+  text-shadow:
+    0 2px 10px rgba(0,0,0,.9);
 
 }
 

@@ -60,32 +60,136 @@
   <!-- ================================= HERO ================================= -->
 
   <header class="hero">
-    <span class="hero-blob hero-blob-1"></span>
-    <span class="hero-blob hero-blob-2"></span>
-    <span class="hero-blob hero-blob-3"></span>
+    <div class="hero-grid">
 
-    <div class="container hero-inner">
+      <div class="hero-panel">
+        <div class="hero-panel-inner">
 
-      <div class="brand-mark">
-        <span class="brand-dot"></span>
-        <span class="brand-name">ZenLink Tech</span>
+          <div class="brand-mark">
+            <span class="brand-dot"></span>
+            <span class="brand-name">ZenLink Tech</span>
+          </div>
+          <div class="brand-motto">Technology for sustainable development</div>
+
+          <h1 style="margin-top:18px;">I build, test <span class="highlight">&amp; engineer</span> systems.</h1>
+
+          <p class="hero-sub">I'm David Ashe — a software developer, DevOps practitioner, QA specialist and engineering student. I build digital products, automate systems, test software and solve technical problems from multiple perspectives.</p>
+
+          <div class="hero-buttons">
+            <a href="#work" class="btn btn-primary">Explore my work <span>↗</span></a>
+            <a href="#contact" class="btn btn-secondary">Let's talk</a>
+            <a href="cv.pdf" download class="btn btn-secondary">Download CV <span>↓</span></a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-chip"><span>Location</span><strong>Nigeria</strong></div>
+            <div class="stat-chip"><span>Focus</span><strong>Software + Systems</strong></div>
+            <div class="stat-chip"><span>Status</span><strong>Building &amp; learning</strong></div>
+          </div>
+
+        </div>
       </div>
-      <div class="brand-motto">Technology for sustainable development</div>
 
-      <h1 style="margin-top:18px;">I build, test <span class="highlight">&amp; engineer</span> systems.</h1>
+      <div class="hero-scene" aria-hidden="true">
+        <svg viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"  stop-color="#0b1f2e"/>
+              <stop offset="35%" stop-color="#0d3c42"/>
+              <stop offset="68%" stop-color="#0ea394"/>
+              <stop offset="100%" stop-color="#7fe0c9"/>
+            </linearGradient>
+            <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"  stop-color="#0a2f37"/>
+              <stop offset="100%" stop-color="#0d4a4a"/>
+            </linearGradient>
+            <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#ffe9b0" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#ffe9b0" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="ridge1" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#12545a"/>
+              <stop offset="100%" stop-color="#0c3a3e"/>
+            </linearGradient>
+            <linearGradient id="ridge2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#167c74"/>
+              <stop offset="100%" stop-color="#0f5650"/>
+            </linearGradient>
+            <linearGradient id="ridge3" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1fae93"/>
+              <stop offset="100%" stop-color="#128b76"/>
+            </linearGradient>
+          </defs>
 
-      <p class="hero-sub">I'm David Ashe — a software developer, DevOps practitioner, QA specialist and engineering student. I build digital products, automate systems, test software and solve technical problems from multiple perspectives.</p>
+          <rect x="0" y="0" width="800" height="900" fill="url(#sky)"/>
 
-      <div class="hero-buttons">
-        <a href="#work" class="btn btn-primary">Explore my work <span>↗</span></a>
-        <a href="#contact" class="btn btn-secondary">Let's talk</a>
-        <a href="cv.pdf" download class="btn btn-secondary">Download CV <span>↓</span></a>
-      </div>
+          <circle cx="590" cy="150" r="110" fill="url(#glow)"/>
+          <circle cx="590" cy="150" r="34" fill="#ffe9b0"/>
 
-      <div class="hero-stats">
-        <div class="stat-chip"><span>Location</span><strong>Nigeria</strong></div>
-        <div class="stat-chip"><span>Focus</span><strong>Software + Systems</strong></div>
-        <div class="stat-chip"><span>Status</span><strong>Building &amp; learning</strong></div>
+          <g opacity="0.55">
+            <circle cx="120" cy="90" r="2" fill="#eafffb"/>
+            <circle cx="200" cy="60" r="1.6" fill="#eafffb"/>
+            <circle cx="300" cy="120" r="2" fill="#eafffb"/>
+            <circle cx="80" cy="200" r="1.4" fill="#eafffb"/>
+            <circle cx="420" cy="70" r="1.6" fill="#eafffb"/>
+            <circle cx="700" cy="80" r="2" fill="#eafffb"/>
+            <circle cx="480" cy="180" r="1.4" fill="#eafffb"/>
+          </g>
+
+          <!-- ridge 1 (farthest, circuit-trace silhouette) -->
+          <polygon fill="url(#ridge1)" points="0,430 70,380 130,410 190,340 260,400 330,360 400,420 470,350 540,405 610,370 680,415 750,365 800,400 800,470 0,470"/>
+          <g stroke="#7fe0c9" stroke-opacity="0.18" stroke-width="2" fill="none">
+            <path d="M70,380 L70,410 L130,410"/>
+            <path d="M260,400 L260,430 L330,430 L330,400"/>
+            <path d="M470,350 L470,390 L540,390"/>
+          </g>
+
+          <!-- ridge 2 -->
+          <polygon fill="url(#ridge2)" points="0,500 60,440 120,480 200,410 270,470 350,420 430,480 500,430 580,485 650,440 730,490 800,450 800,540 0,540"/>
+          <g stroke="#eafffb" stroke-opacity="0.22" stroke-width="2" fill="none">
+            <path d="M120,480 L120,510 L200,510 L200,480"/>
+            <path d="M430,480 L430,510 L500,510"/>
+            <path d="M650,440 L650,470 L730,470"/>
+          </g>
+          <g fill="#ffe9b0">
+            <circle cx="200" cy="480" r="4"/>
+            <circle cx="500" cy="430" r="4"/>
+          </g>
+          <g fill="#8b5cf6">
+            <circle cx="350" cy="420" r="4"/>
+          </g>
+
+          <!-- ridge 3 (nearest, brightest) -->
+          <polygon fill="url(#ridge3)" points="0,600 90,520 170,570 250,500 340,565 420,510 510,575 590,515 670,580 750,530 800,560 800,650 0,650"/>
+          <g stroke="#0b1f2e" stroke-opacity="0.35" stroke-width="2" fill="none">
+            <path d="M170,570 L170,600 L250,600 L250,570"/>
+            <path d="M420,510 L420,545 L510,545 L510,575"/>
+            <path d="M670,580 L670,610 L750,610"/>
+          </g>
+          <g fill="#ff5a4e">
+            <circle cx="250" cy="570" r="4.5"/>
+          </g>
+          <g fill="#ffe9b0">
+            <circle cx="510" cy="545" r="4.5"/>
+            <circle cx="670" cy="580" r="4.5"/>
+          </g>
+
+          <!-- water -->
+          <rect x="0" y="650" width="800" height="250" fill="url(#water)"/>
+          <g opacity="0.28">
+            <polygon fill="#12545a" points="0,650 90,608 170,633 250,598 340,631 420,603 510,637 590,606 670,639 750,614 800,629 800,650 0,650"/>
+          </g>
+          <g stroke="#7fe0c9" stroke-opacity="0.15" stroke-width="1.5">
+            <line x1="0" y1="700" x2="800" y2="700"/>
+            <line x1="0" y1="740" x2="800" y2="740"/>
+            <line x1="0" y1="790" x2="800" y2="790"/>
+            <line x1="0" y1="850" x2="800" y2="850"/>
+          </g>
+          <g fill="#ffe9b0" opacity="0.5">
+            <circle cx="590" cy="700" r="2"/>
+            <circle cx="590" cy="740" r="1.4"/>
+          </g>
+        </svg>
       </div>
 
     </div>

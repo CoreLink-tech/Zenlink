@@ -2,1509 +2,403 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <meta
-    name="description"
-    content="David Ashe | Software Developer, DevOps Practitioner, QA Specialist, Security Tester and Engineering Student."
-  >
-
-  <meta
-    name="keywords"
-    content="David Ashe, software developer, web developer, DevOps, QA, cybersecurity, structural engineering, Nigeria"
-  >
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ZenLink Tech | Software Developer, DevOps Practitioner, QA Specialist, Security Tester and Engineering Student.">
+  <meta name="keywords" content="ZenLink Tech, David Ashe, software developer, web developer, DevOps, QA, cybersecurity, structural engineering, Nigeria">
   <meta name="author" content="David Ashe">
+  <meta name="theme-color" content="#f7f4ec">
+  <title>ZenLink Tech | Developer · DevOps · QA · Engineering</title>
 
-  <meta name="theme-color" content="#14161c">
+  <meta property="og:title" content="ZenLink Tech | Developer · DevOps · QA · Engineering">
+  <meta property="og:description" content="I build, test and engineer digital systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg">
 
-  <title>
-    David Ashe | Developer · DevOps · QA · Engineering
-  </title>
-
-  <!-- Open Graph -->
-
-  <meta
-    property="og:title"
-    content="David Ashe | Developer · DevOps · QA · Engineering"
-  >
-
-  <meta
-    property="og:description"
-    content="I build, test and engineer digital systems."
-  >
-
-  <meta
-    property="og:type"
-    content="website"
-  >
-
-  <meta
-    property="og:url"
-    content="https://yourdomain.com"
-  >
-
-  <meta
-    property="og:image"
-    content="https://yourdomain.com/og-image.jpg"
-  >
-
-  <!-- Twitter -->
-
-  <meta
-    name="twitter:card"
-    content="summary_large_image"
-  >
-
-  <meta
-    name="twitter:title"
-    content="David Ashe"
-  >
-
-  <meta
-    name="twitter:description"
-    content="Software Developer · DevOps · QA · Engineering"
-  >
-
-  <meta
-    name="twitter:image"
-    content="https://yourdomain.com/og-image.jpg"
-  >
-
-  <!-- Fonts -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ZenLink Tech">
+  <meta name="twitter:description" content="Software Developer · DevOps · QA · Engineering">
+  <meta name="twitter:image" content="https://yourdomain.com/og-image.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  >
-
-  <!-- CSS -->
-
-  <link
-    rel="stylesheet"
-    href="style.css"
-  >
-
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
 
-  <!-- ================================
-       PRELOADER
-  ================================= -->
-
-  <div
-    class="loader"
-    id="loader"
-  >
-
-    <div class="loader-inner">
-
-      <div class="loader-logo">
-        <img src="assets/img/logo.png" alt="ZenLink" class="loader-logo-img">
-      </div>
-
-      <div class="loader-bar">
-        <div class="loader-progress"></div>
-      </div>
-
-    </div>
-
+  <div id="loader">
+    <img src="assets/img/logo.png" alt="ZenLink" class="loader-logo-img">
   </div>
-
-
-  <!-- ================================
-       NAVIGATION
-  ================================= -->
 
   <nav id="navbar">
-
     <div class="container nav-inner">
-
-      <a
-        href="#"
-        class="logo hover-target"
-      >
+      <a href="#" class="logo">
         <img src="assets/img/logo.png" alt="ZenLink" class="logo-img">
       </a>
-
-
-      <div class="nav-right">
-
-        <ul class="nav-links">
-
-          <li>
-            <a
-              href="#about"
-              class="hover-target"
-            >
-              About
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#capabilities"
-              class="hover-target"
-            >
-              Capabilities
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#work"
-              class="hover-target"
-            >
-              Work
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#stack"
-              class="hover-target"
-            >
-              Stack
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#contact"
-              class="hover-target"
-            >
-              Contact
-            </a>
-          </li>
-
-        </ul>
-
-
-        <button
-          class="menu-btn hover-target"
-          id="menuBtn"
-          aria-label="Open menu"
-        >
-          ☰
-        </button>
-
-      </div>
-
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#capabilities">Capabilities</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#stack">Stack</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Let's talk</a>
+      <button class="menu-btn" id="menuBtn">☰</button>
     </div>
-
   </nav>
 
-
-  <!-- ================================
-       MOBILE MENU
-  ================================= -->
-
-  <div
-    class="mobile-menu"
-    id="mobileMenu"
-  >
-
-    <div class="mobile-menu-label">
-      NAVIGATION
-    </div>
-
-    <a href="#about">
-      01 — About
-    </a>
-
-    <a href="#capabilities">
-      02 — Capabilities
-    </a>
-
-    <a href="#work">
-      03 — Work
-    </a>
-
-    <a href="#stack">
-      04 — Stack
-    </a>
-
-    <a href="#contact">
-      05 — Contact
-    </a>
-
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-label">NAVIGATION</div>
+    <a href="#about">01 — About</a>
+    <a href="#capabilities">02 — Capabilities</a>
+    <a href="#work">03 — Work</a>
+    <a href="#stack">04 — Stack</a>
+    <a href="#contact">05 — Contact</a>
   </div>
 
-
-  <!-- ================================
-       HERO
-  ================================= -->
+  <!-- ================================= HERO ================================= -->
 
   <header class="hero">
+    <span class="hero-blob hero-blob-1"></span>
+    <span class="hero-blob hero-blob-2"></span>
+    <span class="hero-blob hero-blob-3"></span>
 
-    <div class="container hero-split">
+    <div class="container hero-inner">
 
-      <div class="hero-content">
+      <div class="brand-mark">
+        <span class="brand-dot"></span>
+        <span class="brand-name">ZenLink Tech</span>
+      </div>
+      <div class="brand-motto">Technology for sustainable development</div>
 
-        <div class="hero-card">
+      <h1 style="margin-top:18px;">I build, test <span class="highlight">&amp; engineer</span> systems.</h1>
 
-        <div class="brand-mark">
+      <p class="hero-sub">I'm David Ashe — a software developer, DevOps practitioner, QA specialist and engineering student. I build digital products, automate systems, test software and solve technical problems from multiple perspectives.</p>
 
-          <span class="brand-name">ZenLink Tech</span>
+      <div class="hero-buttons">
+        <a href="#work" class="btn btn-primary">Explore my work <span>↗</span></a>
+        <a href="#contact" class="btn btn-secondary">Let's talk</a>
+        <a href="cv.pdf" download class="btn btn-secondary">Download CV <span>↓</span></a>
+      </div>
 
-          <span class="brand-motto">Technology for sustainable development</span>
-
-        </div>
-
-
-        <h1>
-
-          I build, test
-
-          <span class="highlight">
-            & engineer
-          </span>
-
-          systems.
-
-        </h1>
-
-
-        <div class="hero-buttons">
-
-          <a
-            href="#work"
-            class="btn btn-primary hover-target"
-          >
-            Explore my work
-            <span>↗</span>
-          </a>
-
-
-          <a
-            href="#contact"
-            class="btn btn-secondary hover-target"
-          >
-            Let's talk
-          </a>
-
-
-          <a
-            href="cv.pdf"
-            download
-            class="btn btn-secondary hover-target"
-          >
-            Download CV
-            <span>↓</span>
-          </a>
-
-        </div>
-
-        </div>
-
+      <div class="hero-stats">
+        <div class="stat-chip"><span>Location</span><strong>Nigeria</strong></div>
+        <div class="stat-chip"><span>Focus</span><strong>Software + Systems</strong></div>
+        <div class="stat-chip"><span>Status</span><strong>Building &amp; learning</strong></div>
       </div>
 
     </div>
-
-
-    <div class="scroll-indicator">
-
-      <span>
-        Scroll
-      </span>
-
-      <span class="scroll-line"></span>
-
-    </div>
-
   </header>
 
-
-  <!-- ================================
-       STATS BAR
-  ================================= -->
-
-  <div class="stats-bar">
-
-    <div class="container stats-grid">
-
-      <div class="stat">
-        <span>Location</span>
-        <strong>Nigeria</strong>
-      </div>
-
-      <div class="stat">
-        <span>Focus</span>
-        <strong>Software + Systems</strong>
-      </div>
-
-      <div class="stat">
-        <span>Status</span>
-        <strong>Building & learning</strong>
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <!-- ================================
-       MARQUEE
-  ================================= -->
-
   <div class="marquee">
-
     <div class="marquee-track">
-
-      <span>
-        Software Development
-      </span>
-
-      <i>✦</i>
-
-      <span>
-        DevOps
-      </span>
-
-      <i>✦</i>
-
-      <span>
-        Quality Assurance
-      </span>
-
-      <i>✦</i>
-
-      <span>
-        Security Testing
-      </span>
-
-      <i>✦</i>
-
-      <span>
-        Backend Systems
-      </span>
-
-      <i>✦</i>
-
-      <span>
-        Automation
-      </span>
-
-      <i>✦</i>
-
-      <span>
-        Engineering
-      </span>
-
-      <i>✦</i>
-
-
-      <span>
-        Software Development
-      </span>
-
-      <i>✦</i>
-
-      <span>
-        DevOps
-      </span>
-
-      <i>✦</i>
-
-      <span>
-        Quality Assurance
-      </span>
-
-      <i>✦</i>
-
-      <span>
-        Security Testing
-      </span>
-
-      <i>✦</i>
-
+      <span>Software Development</span> ✦ DevOps ✦ <span>Quality Assurance</span> ✦ Security Testing ✦ <span>Backend Systems</span> ✦ Automation ✦ <span>Engineering</span> ✦
+      <span>Software Development</span> ✦ DevOps ✦ <span>Quality Assurance</span> ✦ Security Testing ✦ <span>Backend Systems</span> ✦ Automation ✦ <span>Engineering</span> ✦
     </div>
-
   </div>
 
+  <!-- ================================= ABOUT ================================= -->
 
-  <!-- ================================
-       ABOUT
-  ================================= -->
-
-  <section
-    id="about"
-    class="section"
-  >
-
+  <section id="about">
     <div class="container">
-
-      <div class="section-heading reveal">
-
+      <div class="section-head reveal">
         <div>
-
-          <div class="section-number">
-            01 / ABOUT
-          </div>
-
-          <h2>
-            More than<br>
-            a developer.
-          </h2>
-
+          <span class="section-number">01 / ABOUT</span>
+          <h2>More than<br>a developer.</h2>
         </div>
-
-
-        <p>
-          Different disciplines teach different ways
-          of thinking. I use that to solve problems.
-        </p>
-
+        <p>Different disciplines teach different ways of thinking. I use that to solve problems.</p>
       </div>
-
 
       <div class="about-grid">
-
-
-        <div class="about-copy reveal">
-
-          <p>
-
-            I'm a <strong>student, developer and builder</strong>
-            interested in the intersection between technology,
-            engineering and business.
-
-          </p>
-
-
-          <p>
-
-            My work spans
-            <strong>web development</strong>,
-            backend systems, DevOps, software QA,
-            security testing, automation and
-            engineering.
-
-          </p>
-
-
-          <p>
-
-            I don't want to just write code that works.
-            I want to understand
-            <span class="accent">
-              how the entire system behaves
-            </span>,
-            where it can fail and how it can be improved.
-
-          </p>
-
+        <div class="about-text reveal">
+          <p>I'm a <strong>student, developer and builder</strong> interested in the intersection between technology, engineering and business.</p>
+          <p>My work spans <strong>web development</strong>, backend systems, DevOps, software QA, security testing, automation and engineering.</p>
+          <p>I don't want to just write code that works. I want to understand <em>how the entire system behaves</em>, where it can fail and how it can be improved.</p>
         </div>
 
-
-        <div class="about-details reveal">
-
-
-          <div class="detail">
-
-            <div class="detail-icon">
-              01
-            </div>
-
-            <h3>
-              Build
-            </h3>
-
-            <p>
-              Turning ideas into functional digital products.
-            </p>
-
+        <div class="pillars reveal">
+          <div class="pillar">
+            <div class="pillar-number">01</div>
+            <h3>Build</h3>
+            <p>Turning ideas into functional digital products.</p>
           </div>
-
-
-          <div class="detail">
-
-            <div class="detail-icon">
-              02
-            </div>
-
-            <h3>
-              Deploy
-            </h3>
-
-            <p>
-              Getting systems into reliable environments.
-            </p>
-
+          <div class="pillar">
+            <div class="pillar-number">02</div>
+            <h3>Deploy</h3>
+            <p>Getting systems into reliable environments.</p>
           </div>
-
-
-          <div class="detail">
-
-            <div class="detail-icon">
-              03
-            </div>
-
-            <h3>
-              Test
-            </h3>
-
-            <p>
-              Finding weaknesses before users do.
-            </p>
-
+          <div class="pillar">
+            <div class="pillar-number">03</div>
+            <h3>Test</h3>
+            <p>Finding weaknesses before users do.</p>
           </div>
-
-
-          <div class="detail">
-
-            <div class="detail-icon">
-              04
-            </div>
-
-            <h3>
-              Engineer
-            </h3>
-
-            <p>
-              Applying analytical thinking to complex problems.
-            </p>
-
+          <div class="pillar">
+            <div class="pillar-number">04</div>
+            <h3>Engineer</h3>
+            <p>Applying analytical thinking to complex problems.</p>
           </div>
-
         </div>
-
       </div>
-
     </div>
-
   </section>
 
+  <!-- ================================= CAPABILITIES ================================= -->
 
-  <!-- ================================
-       CAPABILITIES
-  ================================= -->
-
-  <section
-    id="capabilities"
-    class="section"
-  >
-
+  <section id="capabilities">
     <div class="container">
-
-      <div class="section-heading reveal">
-
+      <div class="section-head reveal">
         <div>
-
-          <div class="section-number">
-            02 / CAPABILITIES
-          </div>
-
-          <h2>
-            What I<br>
-            work on.
-          </h2>
-
+          <span class="section-number">02 / CAPABILITIES</span>
+          <h2>What I<br>work on.</h2>
         </div>
-
-
-        <p>
-          Areas I'm actively building skills,
-          products and experience in.
-        </p>
-
+        <p>Areas I'm actively building skills, products and experience in.</p>
       </div>
 
-
-      <div class="services">
-
-
-        <article class="service reveal">
-
-          <span class="service-number">
-            01 / SOFTWARE
-          </span>
-
-          <div class="service-icon">
-            &lt;/&gt;
-          </div>
-
-          <h3>
-            Web Development
-          </h3>
-
-          <p>
-            Responsive websites and web applications
-            using modern frontend and backend technologies.
-          </p>
-
-        </article>
-
-
-        <article class="service reveal">
-
-          <span class="service-number">
-            02 / BACKEND
-          </span>
-
-          <div class="service-icon">
-            API
-          </div>
-
-          <h3>
-            Backend Systems
-          </h3>
-
-          <p>
-            APIs, databases, authentication, queues
-            and server-side architecture.
-          </p>
-
-        </article>
-
-
-        <article class="service reveal">
-
-          <span class="service-number">
-            03 / INFRASTRUCTURE
-          </span>
-
-          <div class="service-icon">
-            DEV
-          </div>
-
-          <h3>
-            DevOps
-          </h3>
-
-          <p>
-            Deployment, Docker, environments,
-            infrastructure and automation.
-          </p>
-
-        </article>
-
-
-        <article class="service reveal">
-
-          <span class="service-number">
-            04 / QUALITY
-          </span>
-
-          <div class="service-icon">
-            QA
-          </div>
-
-          <h3>
-            Quality Assurance
-          </h3>
-
-          <p>
-            Manual testing, API testing, E2E testing,
-            performance and accessibility.
-          </p>
-
-        </article>
-
-
-        <article class="service reveal">
-
-          <span class="service-number">
-            05 / SECURITY
-          </span>
-
-          <div class="service-icon">
-            SEC
-          </div>
-
-          <h3>
-            Security Testing
-          </h3>
-
-          <p>
-            Responsible web security assessment,
-            reconnaissance and configuration testing.
-          </p>
-
-        </article>
-
-
-        <article class="service reveal">
-
-          <span class="service-number">
-            06 / ENGINEERING
-          </span>
-
-          <div class="service-icon">
-            STR
-          </div>
-
-          <h3>
-            Structural Engineering
-          </h3>
-
-          <p>
-            Engineering study, structural concepts
-            and analytical problem solving.
-          </p>
-
-        </article>
-
+      <div class="services reveal">
+        <div class="service">
+          <div class="service-number">01 / SOFTWARE</div>
+          <div class="service-icon">&lt;/&gt;</div>
+          <h3>Web Development</h3>
+          <p>Responsive websites and web applications using modern frontend and backend technologies.</p>
+        </div>
+        <div class="service">
+          <div class="service-number">02 / BACKEND</div>
+          <div class="service-icon">API</div>
+          <h3>Backend Systems</h3>
+          <p>APIs, databases, authentication, queues and server-side architecture.</p>
+        </div>
+        <div class="service">
+          <div class="service-number">03 / INFRASTRUCTURE</div>
+          <div class="service-icon">DEV</div>
+          <h3>DevOps</h3>
+          <p>Deployment, Docker, environments, infrastructure and automation.</p>
+        </div>
+        <div class="service">
+          <div class="service-number">04 / QUALITY</div>
+          <div class="service-icon">QA</div>
+          <h3>Quality Assurance</h3>
+          <p>Manual testing, API testing, E2E testing, performance and accessibility.</p>
+        </div>
+        <div class="service">
+          <div class="service-number">05 / SECURITY</div>
+          <div class="service-icon">SEC</div>
+          <h3>Security Testing</h3>
+          <p>Responsible web security assessment, reconnaissance and configuration testing.</p>
+        </div>
+        <div class="service">
+          <div class="service-number">06 / ENGINEERING</div>
+          <div class="service-icon">STR</div>
+          <h3>Structural Engineering</h3>
+          <p>Engineering study, structural concepts and analytical problem solving.</p>
+        </div>
       </div>
-
     </div>
-
   </section>
 
+  <!-- ================================= ENGINEERING MINDSET ================================= -->
 
-  <!-- ================================
-       ENGINEERING
-  ================================= -->
-
-  <section class="engineering-section">
-
+  <section id="mindset-wrap">
     <div class="container">
+      <div class="mindset reveal">
+        <span class="section-number">03 / ENGINEERING MINDSET</span>
+        <h2>Systems have structures.</h2>
+        <p style="color:rgba(247,244,236,.62); max-width:480px; margin-top:14px;">Whether the system is physical or digital, understanding how its components interact matters.</p>
 
-      <div class="section-heading reveal">
-
-        <div>
-
-          <div class="section-number">
-            03 / ENGINEERING MINDSET
+        <div class="structure-grid">
+          <div>
+            <div class="structure-label">STRUCTURAL / SYSTEMS THINKING</div>
+            <h3>Strong systems start underneath.</h3>
+            <p>Structural engineering teaches a useful lesson: systems need strong foundations.</p>
+            <p>The same thinking applies to software architecture, databases, infrastructure and quality assurance.</p>
           </div>
-
-          <h2>
-            Systems have<br>
-            structures.
-          </h2>
-
+          <div class="load-list">
+            <div class="load-item">
+              <span>01</span>
+              <div><strong>Foundation</strong><p>Data, infrastructure and environments the rest depends on.</p></div>
+            </div>
+            <div class="load-item">
+              <span>02</span>
+              <div><strong>Structure</strong><p>Architecture, APIs and how components are wired together.</p></div>
+            </div>
+            <div class="load-item">
+              <span>03</span>
+              <div><strong>Load path</strong><p>How stress moves through the system once real users hit it.</p></div>
+            </div>
+          </div>
         </div>
-
-
-        <p>
-          Whether the system is physical or digital,
-          understanding how its components interact matters.
-        </p>
-
       </div>
-
-
-      <div class="principles reveal">
-
-        <div class="principle-copy">
-
-          <span class="blueprint-label">
-            STRUCTURAL / SYSTEMS THINKING
-          </span>
-
-          <h3>
-            Strong systems<br>
-            start underneath.
-          </h3>
-
-          <p>
-            Structural engineering teaches a useful lesson:
-            systems need strong foundations.
-          </p>
-
-          <p>
-            The same thinking applies to software
-            architecture, databases, infrastructure and
-            quality assurance.
-          </p>
-
-        </div>
-
-
-        <div class="principle-stack">
-
-          <div class="principle-layer">
-            <span>01</span>
-            <div>
-              <h4>Foundation</h4>
-              <p>Data, infrastructure and environments the rest depends on.</p>
-            </div>
-          </div>
-
-          <div class="principle-layer">
-            <span>02</span>
-            <div>
-              <h4>Structure</h4>
-              <p>Architecture, APIs and how components are wired together.</p>
-            </div>
-          </div>
-
-          <div class="principle-layer">
-            <span>03</span>
-            <div>
-              <h4>Load path</h4>
-              <p>How stress moves through the system once real users hit it.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
     </div>
-
   </section>
 
+  <!-- ================================= WORK ================================= -->
 
-  <!-- ================================
-       WORK
-  ================================= -->
-
-  <section
-    id="work"
-    class="section"
-  >
-
+  <section id="work">
     <div class="container">
-
-      <div class="section-heading reveal">
-
+      <div class="section-head reveal">
         <div>
-
-          <div class="section-number">
-            04 / SELECTED WORK
-          </div>
-
-          <h2>
-            Things I've<br>
-            built.
-          </h2>
-
+          <span class="section-number">04 / SELECTED WORK</span>
+          <h2>Things I've<br>built.</h2>
         </div>
-
-
-        <p>
-          Products, platforms, experiments and systems.
-        </p>
-
+        <p>Products, platforms, experiments and systems.</p>
       </div>
 
-
-      <!-- FEATURED -->
-
-      <div class="featured-project reveal">
-
-
-        <div class="featured-visual">
-
-          <div class="terminal">
-
-            <div class="terminal-top">
-
-              <span></span>
-              <span></span>
-              <span></span>
-
-              <small>
-                qa-lab
-              </small>
-
-            </div>
-
-
-            <div class="terminal-body">
-
-              <p>
-                <span class="green">$</span>
-                qa-lab scan website
-              </p>
-
-              <p>
-                crawling pages...
-              </p>
-
-              <p>
-                pages scanned:
-                <strong>42</strong>
-              </p>
-
-              <p>
-                performance:
-                <span class="green">
-                  ✓
-                </span>
-              </p>
-
-              <p>
-                accessibility:
-                <span class="green">
-                  ✓
-                </span>
-              </p>
-
-              <p>
-                security:
-                <span class="green">
-                  ✓
-                </span>
-              </p>
-
-              <p>
-                generating report...
-              </p>
-
-              <br>
-
-              <p class="green">
-                QA COMPLETE
-              </p>
-
-            </div>
-
+      <div class="work-grid reveal">
+        <div class="terminal">
+          <div class="terminal-top">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <small>qa-lab</small>
           </div>
-
+          <div class="terminal-body">
+            <div><span class="prompt">$</span> qa-lab scan website</div>
+            <div>crawling pages...</div>
+            <div>pages scanned: <strong>42</strong></div>
+            <div>performance: <span class="green">✓</span></div>
+            <div>accessibility: <span class="green">✓</span></div>
+            <div>security: <span class="green">✓</span></div>
+            <div>generating report...</div>
+            <div class="green">QA COMPLETE</div>
+          </div>
         </div>
 
-
-        <div class="featured-info">
-
-          <span class="featured-label">
-            FEATURED PROJECT
-          </span>
-
-          <h3>
-            QA Lab
-          </h3>
-
-          <p>
-            A website quality assessment platform that
-            analyzes performance, SEO, accessibility,
-            forms, links and security.
-          </p>
-
-          <p>
-            The system combines crawling, page analysis,
-            rule-based findings, scoring and report generation.
-          </p>
-
-
+        <div class="featured">
+          <div class="featured-label">FEATURED PROJECT</div>
+          <h3>QA Lab</h3>
+          <p>A website quality assessment platform that analyzes performance, SEO, accessibility, forms, links and security.</p>
+          <p>The system combines crawling, page analysis, rule-based findings, scoring and report generation.</p>
           <div class="project-tech">
-
-            <span>Node.js</span>
-            <span>Cheerio</span>
-            <span>Axios</span>
-            <span>Playwright</span>
-            <span>NestJS</span>
-            <span>PostgreSQL</span>
-            <span>Redis</span>
-            <span>Docker</span>
-
+            <span>Node.js</span><span>Cheerio</span><span>Axios</span><span>Playwright</span><span>NestJS</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span>
           </div>
-
-
-          <a
-            href="https://github.com/CoreLink-tech"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-secondary project-button hover-target"
-          >
-            Explore on GitHub
-            <span>↗</span>
-          </a>
-
+          <a href="#" class="btn btn-primary">Explore on GitHub <span>↗</span></a>
         </div>
-
       </div>
 
-
-      <!-- PROJECT LIST -->
-
-      <div class="projects">
-
-
-        <a
-          href="https://github.com/CoreLink-tech"
-          target="_blank"
-          rel="noopener"
-          class="project reveal hover-target"
-        >
-
-          <div class="project-index">
-            01
+      <div class="project-list reveal">
+        <div class="project-row">
+          <span class="project-index">01</span>
+          <div>
+            <h4>Vendly</h4>
+            <p>A smart commerce platform designed to give vendors online storefronts while keeping customer orders simple and connected.</p>
+            <div class="project-tech"><span>Next.js</span><span>React</span><span>Supabase</span><span>PostgreSQL</span></div>
           </div>
-
-          <div class="project-main">
-
-            <h3>
-              Vendly
-            </h3>
-
-            <p>
-              A smart commerce platform designed to give
-              vendors online storefronts while keeping
-              customer orders simple and connected.
-            </p>
-
-            <div class="project-tech">
-
-              <span>Next.js</span>
-              <span>React</span>
-              <span>Supabase</span>
-              <span>PostgreSQL</span>
-
-            </div>
-
+          <span class="project-arrow">↗</span>
+        </div>
+        <div class="project-row">
+          <span class="project-index">02</span>
+          <div>
+            <h4>BAMSSA</h4>
+            <p>A student association platform designed to manage organizational information, executives, departments, news and content.</p>
+            <div class="project-tech"><span>Web</span><span>JavaScript</span><span>Supabase</span></div>
           </div>
-
-          <div class="project-arrow">
-            ↗
+          <span class="project-arrow">↗</span>
+        </div>
+        <div class="project-row">
+          <span class="project-index">03</span>
+          <div>
+            <h4>MedEssay</h4>
+            <p>An educational platform focused on short-answer practice and learning workflows.</p>
+            <div class="project-tech"><span>AI</span><span>Education</span><span>Web</span></div>
           </div>
-
-        </a>
-
-
-        <a
-          href="https://github.com/CoreLink-tech"
-          target="_blank"
-          rel="noopener"
-          class="project reveal hover-target"
-        >
-
-          <div class="project-index">
-            02
+          <span class="project-arrow">↗</span>
+        </div>
+        <div class="project-row">
+          <span class="project-index">04</span>
+          <div>
+            <h4>Hall Monitor</h4>
+            <p>A concept exploring real-time lecture hall occupancy and smarter use of physical spaces.</p>
+            <div class="project-tech"><span>JavaScript</span><span>Real-time</span><span>Systems</span></div>
           </div>
-
-          <div class="project-main">
-
-            <h3>
-              BAMSSA
-            </h3>
-
-            <p>
-              A student association platform designed to
-              manage organizational information, executives,
-              departments, news and content.
-            </p>
-
-            <div class="project-tech">
-
-              <span>Web</span>
-              <span>JavaScript</span>
-              <span>Supabase</span>
-
-            </div>
-
+          <span class="project-arrow">↗</span>
+        </div>
+        <div class="project-row">
+          <span class="project-index">05</span>
+          <div>
+            <h4>Automation Experiments</h4>
+            <p>Experiments involving AI, automation, APIs, developer tooling and workflows.</p>
+            <div class="project-tech"><span>AI</span><span>Automation</span><span>APIs</span></div>
           </div>
-
-          <div class="project-arrow">
-            ↗
-          </div>
-
-        </a>
-
-
-        <a
-          href="https://github.com/CoreLink-tech"
-          target="_blank"
-          rel="noopener"
-          class="project reveal hover-target"
-        >
-
-          <div class="project-index">
-            03
-          </div>
-
-          <div class="project-main">
-
-            <h3>
-              MedEssay
-            </h3>
-
-            <p>
-              An educational platform focused on short-answer
-              practice and learning workflows.
-            </p>
-
-            <div class="project-tech">
-
-              <span>AI</span>
-              <span>Education</span>
-              <span>Web</span>
-
-            </div>
-
-          </div>
-
-          <div class="project-arrow">
-            ↗
-          </div>
-
-        </a>
-
-
-        <a
-          href="https://github.com/CoreLink-tech"
-          target="_blank"
-          rel="noopener"
-          class="project reveal hover-target"
-        >
-
-          <div class="project-index">
-            04
-          </div>
-
-          <div class="project-main">
-
-            <h3>
-              Hall Monitor
-            </h3>
-
-            <p>
-              A concept exploring real-time lecture hall
-              occupancy and smarter use of physical spaces.
-            </p>
-
-            <div class="project-tech">
-
-              <span>JavaScript</span>
-              <span>Real-time</span>
-              <span>Systems</span>
-
-            </div>
-
-          </div>
-
-          <div class="project-arrow">
-            ↗
-          </div>
-
-        </a>
-
-
-        <a
-          href="https://github.com/CoreLink-tech"
-          target="_blank"
-          rel="noopener"
-          class="project reveal hover-target"
-        >
-
-          <div class="project-index">
-            05
-          </div>
-
-          <div class="project-main">
-
-            <h3>
-              Automation Experiments
-            </h3>
-
-            <p>
-              Experiments involving AI, automation, APIs,
-              developer tooling and workflows.
-            </p>
-
-            <div class="project-tech">
-
-              <span>AI</span>
-              <span>Automation</span>
-              <span>APIs</span>
-
-            </div>
-
-          </div>
-
-          <div class="project-arrow">
-            ↗
-          </div>
-
-        </a>
-
-
+          <span class="project-arrow">↗</span>
+        </div>
       </div>
-
     </div>
-
   </section>
 
+  <!-- ================================= QUALITY / SECURITY ================================= -->
 
-  <!-- ================================
-       QA
-  ================================= -->
-
-  <section class="section">
-
+  <section id="quality">
     <div class="container">
-
-      <div class="section-heading reveal">
-
+      <div class="section-head reveal">
         <div>
-
-          <div class="section-number">
-            05 / QUALITY
-          </div>
-
-          <h2>
-            Build it.<br>
-            Break it.
-          </h2>
-
+          <span class="section-number">05 / QUALITY</span>
+          <h2>Build it.<br>Break it.</h2>
         </div>
-
-
-        <p>
-          A system isn't finished just because
-          the happy path works.
-        </p>
-
+        <p>A system isn't finished just because the happy path works.</p>
       </div>
 
-
-      <div class="qa-grid">
-
-
-        <div class="qa-card reveal">
-
-          <div class="qa-number">
-            QA / 01
-          </div>
-
-          <h3>
-            Software QA
-          </h3>
-
-          <p>
-            Testing software from the perspective of
-            users, developers and the system itself.
-          </p>
-
-          <ul>
-
-            <li>
-              Functional testing
-            </li>
-
-            <li>
-              Regression testing
-            </li>
-
-            <li>
-              API testing
-            </li>
-
-            <li>
-              End-to-end testing
-            </li>
-
-            <li>
-              Performance testing
-            </li>
-
-            <li>
-              Accessibility testing
-            </li>
-
+      <div class="qa-grid reveal">
+        <div class="qa-card">
+          <div class="qa-number">QA / 01</div>
+          <h3>Software QA</h3>
+          <p>Testing software from the perspective of users, developers and the system itself.</p>
+          <ul class="qa-list">
+            <li>Functional testing</li>
+            <li>Regression testing</li>
+            <li>API testing</li>
+            <li>End-to-end testing</li>
+            <li>Performance testing</li>
+            <li>Accessibility testing</li>
           </ul>
-
         </div>
-
-
-        <div class="qa-card reveal">
-
-          <div class="qa-number">
-            SECURITY / 02
-          </div>
-
-          <h3>
-            Security Assessment
-          </h3>
-
-          <p>
-            Responsible testing focused on discovering
-            weaknesses and improving system security.
-          </p>
-
-          <ul>
-
-            <li>
-              Security headers
-            </li>
-
-            <li>
-              Authentication checks
-            </li>
-
-            <li>
-              Input handling
-            </li>
-
-            <li>
-              Configuration review
-            </li>
-
-            <li>
-              Reconnaissance
-            </li>
-
-            <li>
-              Vulnerability assessment
-            </li>
-
+        <div class="qa-card">
+          <div class="qa-number">SECURITY / 02</div>
+          <h3>Security Assessment</h3>
+          <p>Responsible testing focused on discovering weaknesses and improving system security.</p>
+          <ul class="qa-list">
+            <li>Security headers</li>
+            <li>Authentication checks</li>
+            <li>Input handling</li>
+            <li>Configuration review</li>
+            <li>Reconnaissance</li>
+            <li>Vulnerability assessment</li>
           </ul>
-
         </div>
-
       </div>
-
     </div>
-
   </section>
 
+  <!-- ================================= TOOLKIT ================================= -->
 
-  <!-- ================================
-       STACK
-  ================================= -->
-
-  <section
-    id="stack"
-    class="section"
-  >
-
+  <section id="stack">
     <div class="container">
-
-      <div class="section-heading reveal">
-
+      <div class="section-head reveal">
         <div>
-
-          <div class="section-number">
-            06 / TOOLKIT
-          </div>
-
-          <h2>
-            Technologies<br>
-            I use.
-          </h2>
-
+          <span class="section-number">06 / TOOLKIT</span>
+          <h2>Technologies<br>I use.</h2>
         </div>
-
-
-        <p>
-          My toolkit changes as the problems I'm solving change.
-        </p>
-
+        <p>My toolkit changes as the problems I'm solving change.</p>
       </div>
 
-
-      <div class="stack-grid">
-
-
-        <div class="stack-item reveal" data-tech="HTML / CSS" data-desc="The markup and styling languages every web page is built on — structure and visual design, no framework required.">
-          <span>01</span>
-          HTML / CSS
-        </div>
-
-        <div class="stack-item reveal" data-tech="JavaScript" data-desc="The core scripting language that makes web pages interactive — runs in every browser, and on the server through Node.js.">
-          <span>02</span>
-          JavaScript
-        </div>
-
-        <div class="stack-item reveal" data-tech="TypeScript" data-desc="A typed superset of JavaScript. It catches whole classes of bugs at compile time instead of in production.">
-          <span>03</span>
-          TypeScript
-        </div>
-
-        <div class="stack-item reveal" data-tech="React" data-desc="A component-based library for building user interfaces — the foundation of most of the frontends I ship.">
-          <span>04</span>
-          React
-        </div>
-
-
-        <div class="stack-item reveal" data-tech="Next.js" data-desc="A React framework that adds routing, server rendering and static generation for production-ready web apps.">
-          <span>05</span>
-          Next.js
-        </div>
-
-        <div class="stack-item reveal" data-tech="Node.js" data-desc="A JavaScript runtime for building backend servers, APIs, scripts and automation tooling outside the browser.">
-          <span>06</span>
-          Node.js
-        </div>
-
-        <div class="stack-item reveal" data-tech="NestJS" data-desc="A structured, TypeScript-first framework for building scalable, testable Node.js backends with clear architecture.">
-          <span>07</span>
-          NestJS
-        </div>
-
-        <div class="stack-item reveal" data-tech="REST APIs" data-desc="Designing and consuming HTTP APIs so different systems, services and clients can talk to one another.">
-          <span>08</span>
-          REST APIs
-        </div>
-
-
-        <div class="stack-item reveal" data-tech="PostgreSQL" data-desc="A powerful open-source relational database I use for structured data, transactions and complex queries.">
-          <span>09</span>
-          PostgreSQL
-        </div>
-
-        <div class="stack-item reveal" data-tech="Prisma" data-desc="A type-safe ORM that makes querying and managing a database from TypeScript fast and less error-prone.">
-          <span>10</span>
-          Prisma
-        </div>
-
-        <div class="stack-item reveal" data-tech="Supabase" data-desc="An open-source backend platform — Postgres database, auth, storage and realtime — that speeds up building products.">
-          <span>11</span>
-          Supabase
-        </div>
-
-        <div class="stack-item reveal" data-tech="Redis" data-desc="An in-memory data store I use for caching, session storage and fast lookups where speed matters most.">
-          <span>12</span>
-          Redis
-        </div>
-
-
-        <div class="stack-item reveal" data-tech="BullMQ" data-desc="A Redis-backed job and queue system for running background work — retries, scheduling and processing at scale.">
-          <span>13</span>
-          BullMQ
-        </div>
-
-        <div class="stack-item reveal" data-tech="Docker" data-desc="Packages applications into containers so they run the same way in development, staging and production.">
-          <span>14</span>
-          Docker
-        </div>
-
-        <div class="stack-item reveal" data-tech="Cloudflare" data-desc="Edge network I use for CDN, DNS, security and serverless functions to keep sites fast and protected.">
-          <span>15</span>
-          Cloudflare
-        </div>
-
-        <div class="stack-item reveal" data-tech="Git / GitHub" data-desc="Version control and collaboration — tracking changes, branching, and shipping code with a clear history.">
-          <span>16</span>
-          Git / GitHub
-        </div>
-
-
-        <div class="stack-item reveal" data-tech="Playwright" data-desc="An end-to-end testing framework I use to automate browsers and verify that web apps actually work for users.">
-          <span>17</span>
-          Playwright
-        </div>
-
-        <div class="stack-item reveal" data-tech="Nmap" data-desc="A network scanning tool used during security testing to map open ports, services and potential weak points.">
-          <span>18</span>
-          Nmap
-        </div>
-
-        <div class="stack-item reveal" data-tech="Linux" data-desc="The operating system behind most of my servers and daily development work — scripting, permissions, processes.">
-          <span>19</span>
-          Linux
-        </div>
-
-        <div class="stack-item reveal" data-tech="Termux" data-desc="A terminal emulator that turns an Android device into a full Linux environment — code and ship from a phone.">
-          <span>20</span>
-          Termux
-        </div>
-
+      <div class="stack-grid reveal">
+        <div class="stack-item" data-tech="HTML / CSS" data-desc="The markup and styling languages every web page is built on — structure and visual design, no framework required."><span>01</span>HTML / CSS</div>
+        <div class="stack-item" data-tech="JavaScript" data-desc="The core scripting language that makes web pages interactive — runs in every browser, and on the server through Node.js."><span>02</span>JavaScript</div>
+        <div class="stack-item" data-tech="TypeScript" data-desc="A typed superset of JavaScript. It catches whole classes of bugs at compile time instead of in production."><span>03</span>TypeScript</div>
+        <div class="stack-item" data-tech="React" data-desc="A component-based library for building user interfaces — the foundation of most of the frontends I ship."><span>04</span>React</div>
+        <div class="stack-item" data-tech="Next.js" data-desc="A React framework that adds routing, server rendering and static generation for production-ready web apps."><span>05</span>Next.js</div>
+        <div class="stack-item" data-tech="Node.js" data-desc="A JavaScript runtime for building backend servers, APIs, scripts and automation tooling outside the browser."><span>06</span>Node.js</div>
+        <div class="stack-item" data-tech="NestJS" data-desc="A structured, TypeScript-first framework for building scalable, testable Node.js backends with clear architecture."><span>07</span>NestJS</div>
+        <div class="stack-item" data-tech="REST APIs" data-desc="Designing and consuming HTTP APIs so different systems, services and clients can talk to one another."><span>08</span>REST APIs</div>
+        <div class="stack-item" data-tech="PostgreSQL" data-desc="A powerful open-source relational database I use for structured data, transactions and complex queries."><span>09</span>PostgreSQL</div>
+        <div class="stack-item" data-tech="Prisma" data-desc="A type-safe ORM that makes querying and managing a database from TypeScript fast and less error-prone."><span>10</span>Prisma</div>
+        <div class="stack-item" data-tech="Supabase" data-desc="An open-source backend platform — Postgres database, auth, storage and realtime — that speeds up building products."><span>11</span>Supabase</div>
+        <div class="stack-item" data-tech="Redis" data-desc="An in-memory data store I use for caching, session storage and fast lookups where speed matters most."><span>12</span>Redis</div>
+        <div class="stack-item" data-tech="BullMQ" data-desc="A Redis-backed job and queue system for running background work — retries, scheduling and processing at scale."><span>13</span>BullMQ</div>
+        <div class="stack-item" data-tech="Docker" data-desc="Packages applications into containers so they run the same way in development, staging and production."><span>14</span>Docker</div>
+        <div class="stack-item" data-tech="Cloudflare" data-desc="Edge network I use for CDN, DNS, security and serverless functions to keep sites fast and protected."><span>15</span>Cloudflare</div>
+        <div class="stack-item" data-tech="Git / GitHub" data-desc="Version control and collaboration — tracking changes, branching, and shipping code with a clear history."><span>16</span>Git / GitHub</div>
+        <div class="stack-item" data-tech="Playwright" data-desc="An end-to-end testing framework I use to automate browsers and verify that web apps actually work for users."><span>17</span>Playwright</div>
+        <div class="stack-item" data-tech="Nmap" data-desc="A network scanning tool used during security testing to map open ports, services and potential weak points."><span>18</span>Nmap</div>
+        <div class="stack-item" data-tech="Linux" data-desc="The operating system behind most of my servers and daily development work — scripting, permissions, processes."><span>19</span>Linux</div>
+        <div class="stack-item" data-tech="Termux" data-desc="A terminal emulator that turns an Android device into a full Linux environment — code and ship from a phone."><span>20</span>Termux</div>
       </div>
 
       <div class="tech-modal" id="techModal">
@@ -1516,380 +410,109 @@
           <p class="tech-modal-desc" id="techModalDesc"></p>
         </div>
       </div>
-
     </div>
-
   </section>
 
+  <!-- ================================= JOURNEY ================================= -->
 
-  <!-- ================================
-       JOURNEY
-  ================================= -->
-
-  <section class="section">
-
+  <section id="journey">
     <div class="container">
-
-      <div class="section-heading reveal">
-
+      <div class="section-head reveal">
         <div>
-
-          <div class="section-number">
-            07 / JOURNEY
-          </div>
-
-          <h2>
-            Still<br>
-            becoming.
-          </h2>
-
+          <span class="section-number">07 / JOURNEY</span>
+          <h2>Still<br>becoming.</h2>
         </div>
-
-
-        <p>
-          The goal isn't to know everything.
-          It's to keep becoming better at solving problems.
-        </p>
-
+        <p>The goal isn't to know everything. It's to keep becoming better at solving problems.</p>
       </div>
 
-
-      <div class="timeline">
-
-
-        <div class="timeline-item reveal">
-
-          <span class="timeline-dot"></span>
-
-          <span class="timeline-date">
-            FOUNDATION
-          </span>
-
-          <h3>
-            Started building for the web
-          </h3>
-
-          <p>
-            Began developing websites and learning how
-            software is structured from the frontend upward.
-          </p>
-
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <span class="timeline-tag">FOUNDATION</span>
+          <div><h4>Started building for the web</h4><p>Began developing websites and learning how software is structured from the frontend upward.</p></div>
         </div>
-
-
-        <div class="timeline-item reveal">
-
-          <span class="timeline-dot"></span>
-
-          <span class="timeline-date">
-            FULL STACK
-          </span>
-
-          <h3>
-            Moved beyond the interface
-          </h3>
-
-          <p>
-            Started working with backend systems, databases,
-            APIs, authentication and application architecture.
-          </p>
-
+        <div class="timeline-item">
+          <span class="timeline-tag">FULL STACK</span>
+          <div><h4>Moved beyond the interface</h4><p>Started working with backend systems, databases, APIs, authentication and application architecture.</p></div>
         </div>
-
-
-        <div class="timeline-item reveal">
-
-          <span class="timeline-dot"></span>
-
-          <span class="timeline-date">
-            QUALITY
-          </span>
-
-          <h3>
-            Started testing what I build
-          </h3>
-
-          <p>
-            Began exploring QA, automation, security testing,
-            performance and reliability.
-          </p>
-
+        <div class="timeline-item">
+          <span class="timeline-tag">QUALITY</span>
+          <div><h4>Started testing what I build</h4><p>Began exploring QA, automation, security testing, performance and reliability.</p></div>
         </div>
-
-
-        <div class="timeline-item reveal">
-
-          <span class="timeline-dot"></span>
-
-          <span class="timeline-date">
-            SYSTEMS
-          </span>
-
-          <h3>
-            Thinking beyond applications
-          </h3>
-
-          <p>
-            Exploring DevOps, infrastructure, automation
-            and the systems that keep software running.
-          </p>
-
+        <div class="timeline-item">
+          <span class="timeline-tag">SYSTEMS</span>
+          <div><h4>Thinking beyond applications</h4><p>Exploring DevOps, infrastructure, automation and the systems that keep software running.</p></div>
         </div>
-
-
-        <div class="timeline-item reveal">
-
-          <span class="timeline-dot"></span>
-
-          <span class="timeline-date">
-            NEXT
-          </span>
-
-          <h3>
-            Building products and businesses
-          </h3>
-
-          <p>
-            Combining technology, engineering and business
-            thinking to create useful products.
-          </p>
-
+        <div class="timeline-item">
+          <span class="timeline-tag">NEXT</span>
+          <div><h4>Building products and businesses</h4><p>Combining technology, engineering and business thinking to create useful products.</p></div>
         </div>
-
       </div>
-
     </div>
-
   </section>
 
+  <!-- ================================= APPROACH ================================= -->
 
-  <!-- ================================
-       APPROACH
-  ================================= -->
-
-  <section class="section">
-
+  <section id="approach">
     <div class="container">
-
-      <div class="section-heading reveal">
-
+      <div class="section-head reveal">
         <div>
-
-          <div class="section-number">
-            08 / APPROACH
-          </div>
-
-          <h2>
-            How I<br>
-            think.
-          </h2>
-
+          <span class="section-number">08 / APPROACH</span>
+          <h2>How I<br>think.</h2>
         </div>
-
       </div>
 
-
-      <div class="process">
-
-
-        <div class="process-item reveal">
-
-          <span>
-            01 / UNDERSTAND
-          </span>
-
-          <h3>
-            Define the problem
-          </h3>
-
-          <p>
-            Understand the actual problem before
-            choosing a technology.
-          </p>
-
+      <div class="approach-grid reveal">
+        <div class="approach-card">
+          <div class="approach-number">01</div>
+          <h4>Define the problem</h4>
+          <p>Understand the actual problem before choosing a technology.</p>
         </div>
-
-
-        <div class="process-item reveal">
-
-          <span>
-            02 / ARCHITECT
-          </span>
-
-          <h3>
-            Design the system
-          </h3>
-
-          <p>
-            Think about components, dependencies,
-            data and failure points.
-          </p>
-
+        <div class="approach-card">
+          <div class="approach-number">02</div>
+          <h4>Design the system</h4>
+          <p>Think about components, dependencies, data and failure points.</p>
         </div>
-
-
-        <div class="process-item reveal">
-
-          <span>
-            03 / BUILD
-          </span>
-
-          <h3>
-            Create the solution
-          </h3>
-
-          <p>
-            Turn the architecture into a functional
-            and usable product.
-          </p>
-
+        <div class="approach-card">
+          <div class="approach-number">03</div>
+          <h4>Create the solution</h4>
+          <p>Turn the architecture into a functional and usable product.</p>
         </div>
-
-
-        <div class="process-item reveal">
-
-          <span>
-            04 / TEST
-          </span>
-
-          <h3>
-            Try to break it
-          </h3>
-
-          <p>
-            Find weaknesses, fix them and iterate
-            until the system becomes stronger.
-          </p>
-
+        <div class="approach-card">
+          <div class="approach-number">04</div>
+          <h4>Try to break it</h4>
+          <p>Find weaknesses, fix them and iterate until the system becomes stronger.</p>
         </div>
-
       </div>
-
     </div>
-
   </section>
 
+  <!-- ================================= CONTACT ================================= -->
 
-  <!-- ================================
-       CONTACT
-  ================================= -->
-
-  <section
-    id="contact"
-    class="contact section"
-  >
-
+  <section id="contact">
     <div class="container">
-
-      <div class="contact-content reveal">
-
-        <div class="section-number">
-          09 / CONTACT
-        </div>
-
-
-        <h2>
-          Let's build<br>
-          something
-          <span>
-            useful.
-          </span>
-        </h2>
-
-
-        <p>
-          Have a website, software product, QA project,
-          automation idea or technical problem?
-          Let's talk about it.
-        </p>
-
-
+      <div class="contact reveal">
+        <h2>Let's build something <span class="highlight">useful.</span></h2>
+        <p>Have a website, software product, QA project, automation idea or technical problem? Let's talk about it.</p>
         <div class="contact-links">
-
-
-          <a
-            href="mailto:Ashedavid2005@gmail.com"
-            class="btn btn-primary hover-target"
-          >
-            Email me
-            <span>↗</span>
-          </a>
-
-
-          <a
-            href="https://wa.me/2349168311809"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-secondary hover-target"
-          >
-            WhatsApp
-            <span>↗</span>
-          </a>
-
-
-          <a
-            href="https://github.com/CoreLink-tech"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-secondary hover-target"
-          >
-            GitHub
-            <span>↗</span>
-          </a>
-
-
+          <a href="mailto:ashedavid2005@gmail.com">Email me ↗</a>
+          <a href="#">WhatsApp ↗</a>
+          <a href="#">GitHub ↗</a>
         </div>
-
-
         <div class="contact-email">
-
-          <span>
-            DIRECT CONTACT
-          </span>
-
-          <a
-            href="mailto:Ashedavid2005@gmail.com"
-          >
-            Ashedavid2005@gmail.com
-          </a>
-
+          <span>DIRECT CONTACT</span>
+          <span>ashedavid2005@gmail.com</span>
         </div>
-
       </div>
-
     </div>
-
   </section>
-
-
-  <!-- ================================
-       FOOTER
-  ================================= -->
 
   <footer>
-
     <div class="container footer-inner">
-
-      <div>
-        © 2026 David Ashe
-      </div>
-
-      <div>
-        Software · Systems · Engineering
-      </div>
-
-      <div>
-        Built with curiosity.
-      </div>
-
+      <p>© 2026 ZenLink Tech</p>
+      <p>Software · Systems · Engineering</p>
+      <p>Built with curiosity.</p>
     </div>
-
   </footer>
-
-
-  <!-- ================================
-       JAVASCRIPT
-  ================================= -->
 
   <script>
 
@@ -1898,82 +521,52 @@
     ================================= */
 
     window.addEventListener("load", () => {
-
       setTimeout(() => {
-
-        document
-          .getElementById("loader")
-          .classList.add("hide");
-
-      }, 1000);
-
+        document.getElementById("loader").classList.add("hide");
+      }, 700);
     });
-
 
     /* =================================
        NAVBAR
     ================================= */
 
-    const navbar =
-      document.getElementById("navbar");
-
-
+    const navbar = document.getElementById("navbar");
     window.addEventListener("scroll", () => {
-
       if (window.scrollY > 40) {
-
         navbar.classList.add("scrolled");
-
       } else {
-
         navbar.classList.remove("scrolled");
-
       }
-
     });
-
 
     /* =================================
        MOBILE MENU
     ================================= */
 
-    const menuBtn =
-      document.getElementById("menuBtn");
-
-    const mobileMenu =
-      document.getElementById("mobileMenu");
-
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
 
     menuBtn.addEventListener("click", () => {
-
       mobileMenu.classList.toggle("open");
-
       document.body.classList.toggle("no-scroll");
-
-      menuBtn.textContent =
-        mobileMenu.classList.contains("open")
-        ? "×"
-        : "☰";
-
+      menuBtn.textContent = mobileMenu.classList.contains("open") ? "×" : "☰";
     });
 
-
-    document
-      .querySelectorAll(".mobile-menu a")
-      .forEach(link => {
-
-        link.addEventListener("click", () => {
-
-          mobileMenu.classList.remove("open");
-
-          document.body.classList.remove("no-scroll");
-
-          menuBtn.textContent = "☰";
-
-        });
-
+    document.querySelectorAll(".mobile-menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        document.body.classList.remove("no-scroll");
+        menuBtn.textContent = "☰";
       });
+    });
 
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") {
+        mobileMenu.classList.remove("open");
+        document.body.classList.remove("no-scroll");
+        menuBtn.textContent = "☰";
+      }
+    });
 
     /* =================================
        TECH MODAL
@@ -1984,105 +577,45 @@
     const techModalDesc = document.getElementById("techModalDesc");
 
     document.querySelectorAll(".stack-item").forEach(item => {
-
       item.addEventListener("click", () => {
-
         techModalTitle.textContent = item.dataset.tech;
         techModalDesc.textContent = item.dataset.desc;
         techModal.classList.add("open");
         document.body.classList.add("no-scroll");
-
       });
-
     });
 
     techModal.querySelectorAll("[data-close-modal]").forEach(el => {
-
       el.addEventListener("click", () => {
-
         techModal.classList.remove("open");
         document.body.classList.remove("no-scroll");
-
       });
-
     });
 
     document.addEventListener("keydown", e => {
-
       if (e.key === "Escape") {
-
         techModal.classList.remove("open");
         document.body.classList.remove("no-scroll");
-
       }
-
     });
-
 
     /* =================================
        REVEAL ANIMATION
     ================================= */
 
-    const revealElements =
-      document.querySelectorAll(".reveal");
-
-
-    const revealObserver =
-      new IntersectionObserver(
-        entries => {
-
-          entries.forEach(entry => {
-
-            if (entry.isIntersecting) {
-
-              entry.target.classList.add("visible");
-
-              revealObserver.unobserve(
-                entry.target
-              );
-
-            }
-
-          });
-
-        },
-        {
-          threshold: 0.12
-        }
-      );
-
-
-    revealElements.forEach(element => {
-
-      revealObserver.observe(element);
-
-    });
-
-
-    /* =================================
-       ESCAPE MOBILE MENU
-    ================================= */
-
-    document.addEventListener(
-      "keydown",
-      event => {
-
-        if (event.key === "Escape") {
-
-          mobileMenu.classList.remove(
-            "open"
-          );
-
-          document.body.classList.remove(
-            "no-scroll"
-          );
-
-          menuBtn.textContent = "☰";
-
-        }
-
-      }
+    const revealElements = document.querySelectorAll(".reveal");
+    const revealObserver = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
     );
+    revealElements.forEach(element => revealObserver.observe(element));
 
   </script>
 

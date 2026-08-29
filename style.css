@@ -5,20 +5,22 @@
 ========================================================= */
 
 :root {
-  --bg:          #16273b;
-  --bg-soft:     #1d2f47;
-  --bg-card:     #24384f;
-  --parchment:   #efd9ba;
-  --parchment-2: #e6c99a;
-  --ink:         #211a10;
-  --line:        rgba(243,232,210,.14);
-  --line-strong: rgba(243,232,210,.24);
-  --text:        #f3e8d2;
-  --text-soft:   rgba(243,232,210,.68);
-  --text-faint:  rgba(243,232,210,.42);
-  --accent:      #cd8143;
-  --accent-soft: rgba(205,129,67,.18);
-  --green:       #83c98f;
+  --bg:          #12211f;
+  --bg-soft:     #192b28;
+  --bg-card:     #213834;
+  --parchment:   #f2ede1;
+  --parchment-2: #ddd6c4;
+  --ink:         #1c1a16;
+  --line:        rgba(242,237,225,.12);
+  --line-strong: rgba(242,237,225,.22);
+  --text:        #f2ede1;
+  --text-soft:   rgba(242,237,225,.68);
+  --text-faint:  rgba(242,237,225,.42);
+  --accent:      #b1503a;
+  --accent-soft: rgba(177,80,58,.18);
+  --teal:        #4f8489;
+  --teal-soft:   rgba(79,132,137,.18);
+  --green:       #6fae74;
   --max-width:   1160px;
   --ease:        cubic-bezier(.19,1,.22,1);
 }
@@ -215,10 +217,10 @@ nav.scrolled {
   padding: 96px 0 110px;
 
   background-color: var(--bg);
-  background-image: url("assets/img/hero-parchment.jpg");
+  background-image: url("assets/img/hero-collage-mobile.webp");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: contain;
+  background-size: cover;
 }
 
 .hero-split { max-width: 760px; width: 100%; }
@@ -247,7 +249,7 @@ nav.scrolled {
   font-size: 11.5px;
   letter-spacing: .6px;
   text-transform: uppercase;
-  color: #6b4a2c;
+  color: #3c6367;
 }
 
 .hero h1 {
@@ -258,9 +260,17 @@ nav.scrolled {
   color: var(--ink);
 }
 
-.hero h1 .highlight { color: #8a3f16; font-style: italic; }
+.hero h1 .highlight { color: #7c3a26; font-style: italic; }
 
 .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.hero .btn-secondary {
+  border-color: rgba(28,26,22,.3);
+  color: var(--ink);
+  background: rgba(242,237,225,.35);
+  backdrop-filter: blur(6px);
+}
+.hero .btn-secondary:hover { border-color: var(--accent); color: var(--accent); background: rgba(242,237,225,.55); }
 
 .scroll-indicator {
   position: absolute;
@@ -382,7 +392,7 @@ nav.scrolled {
 .service:hover { transform: rotate(0deg) translateY(-6px); box-shadow: 0 22px 44px rgba(6,11,18,.4); }
 
 .service:nth-child(1) { --tilt: -3deg; background: linear-gradient(155deg, #35c2c9, #0f7f88); }
-.service:nth-child(2) { --tilt: 2.5deg; background: linear-gradient(155deg, #2e3a63, #161b30); }
+.service:nth-child(2) { --tilt: 2.5deg; background: linear-gradient(155deg, #2c4a4d, #142120); }
 .service:nth-child(3) { --tilt: -2deg; background: linear-gradient(155deg, var(--accent), #8a4a1f); }
 .service:nth-child(4) { --tilt: 3deg; background: linear-gradient(155deg, #6bbf6f, #2e7d42); }
 .service:nth-child(5) { --tilt: -2.5deg; background: linear-gradient(155deg, #e0616f, #a52f45); }
@@ -560,10 +570,10 @@ nav.scrolled {
 .tech-modal-label {
   font-family: "Space Mono", monospace;
   font-size: 10px; letter-spacing: 1.5px;
-  color: #8a4a1f;
+  color: #7c3a26;
   margin-bottom: 10px;
 }
-.tech-modal-title { font-size: 24px; margin-bottom: 12px; }
+.tech-modal-title { font-size: 24px; margin-bottom: 12px; color: var(--ink); }
 .tech-modal-desc { font-size: 14.5px; line-height: 1.7; color: rgba(33,26,16,.78); }
 
 /* =========================================================

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="ZenLink designs, builds, tests and maintains modern software systems, web applications and digital infrastructure.">
   <meta name="author" content="ZenLink">
-  <meta name="theme-color" content="#0c0e12">
+  <meta name="theme-color" content="#090b0f">
   <title>ZenLink — Software Engineering & Digital Systems</title>
 
   <meta property="og:title" content="ZenLink — Software Engineering & Digital Systems">
@@ -27,27 +27,28 @@
 </head>
 <body>
 
-  <!-- Loader -->
   <div id="loader" aria-hidden="true">
-    <img src="assets/img/logo.png" alt="" class="loader-logo">
+    <div class="loader-mark">
+      <img src="assets/img/logo.png" alt="" class="loader-logo">
+      <span class="loader-bar"></span>
+    </div>
   </div>
 
-  <!-- Navigation -->
   <nav id="navbar" aria-label="Primary">
     <div class="container nav-inner">
       <a href="#" class="logo" aria-label="ZenLink home">
-        <img src="assets/img/logo.png" alt="ZenLink" class="logo-img" width="28" height="28">
+        <img src="assets/img/logo.png" alt="ZenLink" class="logo-img" width="30" height="30">
         <span class="logo-text">ZenLink</span>
       </a>
 
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
         <li><a href="#work">Work</a></li>
+        <li><a href="#stack">Stack</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <a href="#contact" class="nav-cta">Start a project</a>
+      <a href="#contact" class="nav-cta">Start a project <span aria-hidden="true">→</span></a>
 
       <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
         <span class="menu-icon" aria-hidden="true"></span>
@@ -55,32 +56,39 @@
     </div>
   </nav>
 
-  <!-- Mobile menu -->
   <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile navigation" hidden>
     <div class="mobile-menu-header">
-      <span class="mobile-menu-label">Menu</span>
+      <span class="mobile-menu-label">Navigation</span>
       <button class="menu-close" id="menuClose" aria-label="Close menu">&times;</button>
     </div>
     <nav class="mobile-nav" aria-label="Mobile">
       <a href="#services"><span>01</span> Services</a>
       <a href="#work"><span>02</span> Work</a>
-      <a href="#about"><span>03</span> About</a>
-      <a href="#contact"><span>04</span> Contact</a>
+      <a href="#stack"><span>03</span> Stack</a>
+      <a href="#about"><span>04</span> About</a>
+      <a href="#contact"><span>05</span> Contact</a>
     </nav>
     <a href="#contact" class="mobile-cta">Start a project →</a>
   </div>
 
   <main>
 
-    <!-- ========== HERO ========== -->
+    <!-- HERO -->
     <header class="hero">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-scan"></div>
+      </div>
 
       <div class="container hero-inner">
-        <p class="eyebrow">Software engineering & digital systems</p>
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Software engineering & digital systems
+        </div>
 
-        <h1>Technology built for<br>real-world problems.</h1>
+        <h1>Technology built for<br><span class="hero-accent">real-world problems.</span></h1>
 
         <p class="hero-lead">
           ZenLink designs, builds, tests and maintains modern software systems,
@@ -92,103 +100,132 @@
           <a href="#work" class="btn btn-ghost">Explore our work</a>
         </div>
 
-        <div class="capability-strip" aria-label="Core capabilities">
-          <span>Software</span>
-          <span class="dot" aria-hidden="true"></span>
-          <span>Infrastructure</span>
-          <span class="dot" aria-hidden="true"></span>
-          <span>Quality</span>
-          <span class="dot" aria-hidden="true"></span>
-          <span>Security</span>
-          <span class="dot" aria-hidden="true"></span>
-          <span>Automation</span>
+        <div class="hero-metrics" aria-label="Focus areas">
+          <div class="metric">
+            <span class="metric-label">Focus</span>
+            <strong>Software + Systems</strong>
+          </div>
+          <div class="metric">
+            <span class="metric-label">Approach</span>
+            <strong>Build · Test · Operate</strong>
+          </div>
+          <div class="metric">
+            <span class="metric-label">Location</span>
+            <strong>Nigeria</strong>
+          </div>
         </div>
       </div>
     </header>
 
-    <!-- ========== SERVICES ========== -->
+    <!-- CAPABILITY STRIP -->
+    <div class="strip" aria-label="Core capabilities">
+      <div class="strip-track">
+        <span>Software Development</span><i></i>
+        <span>Backend Systems</span><i></i>
+        <span>Cloud Infrastructure</span><i></i>
+        <span>Quality Engineering</span><i></i>
+        <span>Security Testing</span><i></i>
+        <span>Automation</span><i></i>
+        <span>Software Development</span><i></i>
+        <span>Backend Systems</span><i></i>
+        <span>Cloud Infrastructure</span><i></i>
+        <span>Quality Engineering</span><i></i>
+        <span>Security Testing</span><i></i>
+        <span>Automation</span><i></i>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
     <section id="services" class="section services-section">
       <div class="container">
         <div class="section-header reveal">
           <div>
-            <p class="section-label">What we build</p>
-            <h2>Engineering capabilities</h2>
+            <p class="section-label">01 — Capabilities</p>
+            <h2>What we build</h2>
           </div>
-          <p class="section-intro">Practical software and systems work — from product interfaces to the infrastructure underneath.</p>
+          <p class="section-intro">Practical engineering across product interfaces, systems, quality and security.</p>
         </div>
 
         <div class="services-grid reveal">
           <article class="service-card">
-            <div class="service-meta">
+            <div class="service-top">
               <span class="service-num">01</span>
-              <span class="service-icon" aria-hidden="true">&lt;/&gt;</span>
+              <span class="service-tag">Product</span>
             </div>
             <h3>Software Development</h3>
             <p>Modern web applications, business platforms, dashboards, APIs and custom software designed around real operational needs.</p>
+            <div class="service-line" aria-hidden="true"></div>
           </article>
 
           <article class="service-card">
-            <div class="service-meta">
+            <div class="service-top">
               <span class="service-num">02</span>
-              <span class="service-icon" aria-hidden="true">◎</span>
+              <span class="service-tag">Systems</span>
             </div>
             <h3>Systems & Infrastructure</h3>
             <p>Backend systems, databases, cloud deployments, integrations and infrastructure designed for reliability and scale.</p>
+            <div class="service-line" aria-hidden="true"></div>
           </article>
 
           <article class="service-card">
-            <div class="service-meta">
+            <div class="service-top">
               <span class="service-num">03</span>
-              <span class="service-icon" aria-hidden="true">✓</span>
+              <span class="service-tag">Quality</span>
             </div>
             <h3>Quality Engineering</h3>
             <p>Functional testing, API testing, end-to-end testing, performance validation and accessibility checks.</p>
+            <div class="service-line" aria-hidden="true"></div>
           </article>
 
           <article class="service-card">
-            <div class="service-meta">
+            <div class="service-top">
               <span class="service-num">04</span>
-              <span class="service-icon" aria-hidden="true">⛨</span>
+              <span class="service-tag">Security</span>
             </div>
             <h3>Security</h3>
             <p>Security assessment, vulnerability testing and practical hardening of applications and digital systems.</p>
+            <div class="service-line" aria-hidden="true"></div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ========== WORK ========== -->
+    <!-- WORK -->
     <section id="work" class="section work-section">
       <div class="container">
         <div class="section-header reveal">
           <div>
-            <p class="section-label">Selected work</p>
-            <h2>Systems and products built to solve practical problems.</h2>
+            <p class="section-label">02 — Selected work</p>
+            <h2>Systems built to solve practical problems.</h2>
           </div>
         </div>
 
-        <!-- Featured: QA Lab -->
         <article class="project-featured reveal">
           <div class="project-featured-visual">
             <div class="terminal" aria-hidden="true">
               <div class="terminal-bar">
-                <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
-                <span class="t-title">qa-lab</span>
+                <span class="t-dot red"></span>
+                <span class="t-dot yellow"></span>
+                <span class="t-dot green"></span>
+                <span class="t-title">qa-lab — scan</span>
               </div>
               <div class="terminal-body">
                 <div><span class="t-prompt">$</span> qa-lab scan website</div>
-                <div>crawling pages…</div>
+                <div class="t-dim">crawling pages…</div>
                 <div>pages scanned: <strong>42</strong></div>
-                <div>performance: <span class="t-ok">pass</span></div>
-                <div>accessibility: <span class="t-ok">pass</span></div>
-                <div>security: <span class="t-ok">pass</span></div>
-                <div>generating report…</div>
-                <div class="t-ok">QA COMPLETE</div>
+                <div>performance···· <span class="t-ok">pass</span></div>
+                <div>accessibility·· <span class="t-ok">pass</span></div>
+                <div>security······· <span class="t-ok">pass</span></div>
+                <div class="t-dim">generating report…</div>
+                <div class="t-ok t-bold">✓ QA COMPLETE</div>
               </div>
             </div>
           </div>
           <div class="project-featured-body">
-            <p class="project-category">Quality platform</p>
+            <div class="project-meta">
+              <span class="project-category">Quality platform</span>
+              <span class="project-status">Featured</span>
+            </div>
             <h3>QA Lab</h3>
             <p>A website quality assessment platform that analyzes performance, SEO, accessibility, forms, links and security. Combines crawling, rule-based findings, scoring and report generation.</p>
             <ul class="tech-list" aria-label="Technologies">
@@ -202,10 +239,12 @@
           </div>
         </article>
 
-        <!-- Secondary projects -->
         <div class="projects-grid reveal">
           <article class="project-card">
-            <p class="project-category">Commerce platform</p>
+            <div class="project-card-top">
+              <span class="project-category">Commerce</span>
+              <span class="project-index">01</span>
+            </div>
             <h3>Vendly</h3>
             <p>An e-commerce platform designed to give vendors online storefronts while keeping customer orders simple and connected.</p>
             <ul class="tech-list">
@@ -217,7 +256,10 @@
           </article>
 
           <article class="project-card">
-            <p class="project-category">Organization platform</p>
+            <div class="project-card-top">
+              <span class="project-category">Organization</span>
+              <span class="project-index">02</span>
+            </div>
             <h3>BAMSSA</h3>
             <p>A student association platform for managing organizational information, executives, departments, news and content.</p>
             <ul class="tech-list">
@@ -228,7 +270,10 @@
           </article>
 
           <article class="project-card">
-            <p class="project-category">Education</p>
+            <div class="project-card-top">
+              <span class="project-category">Education</span>
+              <span class="project-index">03</span>
+            </div>
             <h3>MedEssay</h3>
             <p>An educational platform focused on short-answer practice and structured learning workflows.</p>
             <ul class="tech-list">
@@ -238,7 +283,10 @@
           </article>
 
           <article class="project-card">
-            <p class="project-category">Systems concept</p>
+            <div class="project-card-top">
+              <span class="project-category">Systems</span>
+              <span class="project-index">04</span>
+            </div>
             <h3>Hall Monitor</h3>
             <p>A concept exploring real-time lecture hall occupancy and smarter use of physical spaces.</p>
             <ul class="tech-list">
@@ -250,15 +298,15 @@
       </div>
     </section>
 
-    <!-- ========== PRINCIPLES ========== -->
+    <!-- PRINCIPLES -->
     <section id="principles" class="section principles-section">
       <div class="container">
         <div class="section-header reveal">
           <div>
-            <p class="section-label">Approach</p>
+            <p class="section-label">03 — Approach</p>
             <h2>Built beyond the interface.</h2>
           </div>
-          <p class="section-intro">Good software is more than what users see. We think about the architecture, reliability, security and performance behind every product.</p>
+          <p class="section-intro">Good software is more than what users see. We think about architecture, reliability, security and performance behind every product.</p>
         </div>
 
         <div class="principles-grid reveal">
@@ -286,67 +334,82 @@
       </div>
     </section>
 
-    <!-- ========== STACK ========== -->
+    <!-- STACK — interactive toolkit -->
     <section id="stack" class="section stack-section">
       <div class="container">
         <div class="section-header reveal">
           <div>
-            <p class="section-label">Technology</p>
+            <p class="section-label">04 — Technology</p>
             <h2>Technology we work with</h2>
           </div>
+          <p class="section-intro">Select a tool to see how it fits into our engineering work.</p>
         </div>
 
-        <div class="stack-groups reveal">
-          <div class="stack-group">
-            <h3>Frontend</h3>
-            <ul>
-              <li>React</li>
-              <li>Next.js</li>
-              <li>TypeScript</li>
-              <li>HTML / CSS</li>
-              <li>JavaScript</li>
-            </ul>
+        <div class="stack-categories reveal">
+          <div class="stack-cat">
+            <h3 class="stack-cat-title">Frontend</h3>
+            <div class="stack-chips">
+              <button type="button" class="stack-chip" data-tech="React" data-desc="Component-based library for building user interfaces — the foundation of most of the frontends we ship.">React</button>
+              <button type="button" class="stack-chip" data-tech="Next.js" data-desc="React framework with routing, server rendering and static generation for production-ready web applications.">Next.js</button>
+              <button type="button" class="stack-chip" data-tech="TypeScript" data-desc="Typed superset of JavaScript that catches whole classes of bugs at compile time instead of in production.">TypeScript</button>
+              <button type="button" class="stack-chip" data-tech="HTML / CSS" data-desc="Markup and styling foundations every web page is built on — structure and visual design, framework optional.">HTML / CSS</button>
+              <button type="button" class="stack-chip" data-tech="JavaScript" data-desc="Core scripting language for interactive web pages — runs in every browser and on the server through Node.js.">JavaScript</button>
+            </div>
           </div>
-          <div class="stack-group">
-            <h3>Backend</h3>
-            <ul>
-              <li>Node.js</li>
-              <li>NestJS</li>
-              <li>REST APIs</li>
-              <li>PostgreSQL</li>
-              <li>Prisma</li>
-              <li>Supabase</li>
-              <li>Redis</li>
-            </ul>
+
+          <div class="stack-cat">
+            <h3 class="stack-cat-title">Backend</h3>
+            <div class="stack-chips">
+              <button type="button" class="stack-chip" data-tech="Node.js" data-desc="JavaScript runtime for building backend servers, APIs, scripts and automation tooling outside the browser.">Node.js</button>
+              <button type="button" class="stack-chip" data-tech="NestJS" data-desc="Structured, TypeScript-first framework for building scalable, testable Node.js backends with clear architecture.">NestJS</button>
+              <button type="button" class="stack-chip" data-tech="REST APIs" data-desc="Designing and consuming HTTP APIs so different systems, services and clients can talk to one another.">REST APIs</button>
+              <button type="button" class="stack-chip" data-tech="PostgreSQL" data-desc="Powerful open-source relational database for structured data, transactions and complex queries.">PostgreSQL</button>
+              <button type="button" class="stack-chip" data-tech="Prisma" data-desc="Type-safe ORM that makes querying and managing a database from TypeScript fast and less error-prone.">Prisma</button>
+              <button type="button" class="stack-chip" data-tech="Supabase" data-desc="Open-source backend platform — Postgres, auth, storage and realtime — that speeds up building products.">Supabase</button>
+              <button type="button" class="stack-chip" data-tech="Redis" data-desc="In-memory data store used for caching, session storage and fast lookups where speed matters most.">Redis</button>
+            </div>
           </div>
-          <div class="stack-group">
-            <h3>Infrastructure</h3>
-            <ul>
-              <li>Docker</li>
-              <li>Cloudflare</li>
-              <li>Git / GitHub</li>
-              <li>Linux</li>
-            </ul>
+
+          <div class="stack-cat">
+            <h3 class="stack-cat-title">Infrastructure</h3>
+            <div class="stack-chips">
+              <button type="button" class="stack-chip" data-tech="Docker" data-desc="Packages applications into containers so they run the same way in development, staging and production.">Docker</button>
+              <button type="button" class="stack-chip" data-tech="Cloudflare" data-desc="Edge network used for CDN, DNS, security and serverless functions to keep sites fast and protected.">Cloudflare</button>
+              <button type="button" class="stack-chip" data-tech="Git / GitHub" data-desc="Version control and collaboration — tracking changes, branching, and shipping code with a clear history.">Git / GitHub</button>
+              <button type="button" class="stack-chip" data-tech="Linux" data-desc="Operating system behind most servers and daily development work — scripting, permissions, processes.">Linux</button>
+            </div>
           </div>
-          <div class="stack-group">
-            <h3>Quality & Security</h3>
-            <ul>
-              <li>Playwright</li>
-              <li>API testing</li>
-              <li>Performance testing</li>
-              <li>Security assessment</li>
-            </ul>
+
+          <div class="stack-cat">
+            <h3 class="stack-cat-title">Quality & Security</h3>
+            <div class="stack-chips">
+              <button type="button" class="stack-chip" data-tech="Playwright" data-desc="End-to-end testing framework used to automate browsers and verify that web apps actually work for users.">Playwright</button>
+              <button type="button" class="stack-chip" data-tech="API testing" data-desc="Systematic validation of endpoints, contracts, error handling and performance of backend services.">API testing</button>
+              <button type="button" class="stack-chip" data-tech="Performance testing" data-desc="Measuring load, response times and resource use so systems stay responsive under real conditions.">Performance testing</button>
+              <button type="button" class="stack-chip" data-tech="Security assessment" data-desc="Responsible testing focused on discovering weaknesses, reviewing configuration and improving system security.">Security assessment</button>
+            </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Tech detail panel -->
+      <div class="tech-panel" id="techPanel" hidden>
+        <div class="tech-panel-backdrop" data-close-panel></div>
+        <div class="tech-panel-sheet" role="dialog" aria-modal="true" aria-labelledby="techPanelTitle">
+          <button class="tech-panel-close" data-close-panel aria-label="Close">&times;</button>
+          <p class="tech-panel-label">Technology</p>
+          <h3 class="tech-panel-title" id="techPanelTitle"></h3>
+          <p class="tech-panel-desc" id="techPanelDesc"></p>
         </div>
       </div>
     </section>
 
-    <!-- ========== ABOUT ========== -->
+    <!-- ABOUT -->
     <section id="about" class="section about-section">
       <div class="container">
         <div class="about-layout reveal">
           <div class="about-main">
-            <p class="section-label">About ZenLink</p>
+            <p class="section-label">05 — About ZenLink</p>
             <h2>A technology studio focused on practical systems.</h2>
             <p>
               ZenLink is a technology-focused engineering studio building practical software,
@@ -357,7 +420,7 @@
               and security — treating software as a system, not just a set of screens.
             </p>
           </div>
-          <div class="about-founder">
+          <aside class="about-founder">
             <p class="founder-label">Led by</p>
             <h3>David Ashe</h3>
             <p>
@@ -365,29 +428,28 @@
               Background spans web development, backend systems, DevOps practices,
               quality assurance and security testing.
             </p>
-            <p class="founder-location">Based in Nigeria</p>
-          </div>
+            <div class="founder-meta">
+              <span>Based in Nigeria</span>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <!-- ========== CONTACT ========== -->
+    <!-- CONTACT -->
     <section id="contact" class="section contact-section">
       <div class="container">
         <div class="contact-panel reveal">
           <div class="contact-copy">
-            <p class="section-label light">Contact</p>
-            <h2>Have a system to build?</h2>
+            <p class="section-label">Contact</p>
+            <h2>Have a system<br>to build?</h2>
             <p>Tell us what you're trying to build, improve or solve.</p>
           </div>
-
           <div class="contact-actions">
             <a href="mailto:ashedavid2005@gmail.com" class="btn btn-primary btn-lg">
               Start a project <span aria-hidden="true">→</span>
             </a>
-            <div class="contact-alt">
-              <a href="mailto:ashedavid2005@gmail.com">ashedavid2005@gmail.com</a>
-            </div>
+            <a href="mailto:ashedavid2005@gmail.com" class="contact-email">ashedavid2005@gmail.com</a>
           </div>
         </div>
       </div>
@@ -395,7 +457,6 @@
 
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
@@ -405,6 +466,7 @@
       <nav class="footer-nav" aria-label="Footer">
         <a href="#services">Services</a>
         <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -416,16 +478,13 @@
     /* Loader */
     window.addEventListener("load", () => {
       const loader = document.getElementById("loader");
-      if (loader) {
-        setTimeout(() => loader.classList.add("hide"), 500);
-      }
+      if (loader) setTimeout(() => loader.classList.add("hide"), 600);
     });
 
-    /* Navbar scroll state */
+    /* Navbar */
     const navbar = document.getElementById("navbar");
     const onScroll = () => {
-      if (window.scrollY > 24) navbar.classList.add("scrolled");
-      else navbar.classList.remove("scrolled");
+      navbar.classList.toggle("scrolled", window.scrollY > 20);
     };
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
@@ -441,29 +500,53 @@
       document.body.classList.add("no-scroll");
       menuBtn.setAttribute("aria-expanded", "true");
     }
-
     function closeMenu() {
       mobileMenu.classList.remove("open");
       document.body.classList.remove("no-scroll");
       menuBtn.setAttribute("aria-expanded", "false");
-      setTimeout(() => { mobileMenu.hidden = true; }, 320);
+      setTimeout(() => { mobileMenu.hidden = true; }, 300);
     }
 
     menuBtn.addEventListener("click", () => {
-      if (mobileMenu.classList.contains("open")) closeMenu();
-      else openMenu();
+      mobileMenu.classList.contains("open") ? closeMenu() : openMenu();
     });
     if (menuClose) menuClose.addEventListener("click", closeMenu);
-
-    mobileMenu.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", closeMenu);
-    });
-
+    mobileMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
     document.addEventListener("keydown", e => {
       if (e.key === "Escape" && mobileMenu.classList.contains("open")) closeMenu();
     });
 
-    /* Reveal on scroll */
+    /* Tech panel */
+    const techPanel = document.getElementById("techPanel");
+    const techTitle = document.getElementById("techPanelTitle");
+    const techDesc = document.getElementById("techPanelDesc");
+
+    function openTechPanel(tech, desc) {
+      techTitle.textContent = tech;
+      techDesc.textContent = desc;
+      techPanel.hidden = false;
+      requestAnimationFrame(() => techPanel.classList.add("open"));
+      document.body.classList.add("no-scroll");
+    }
+    function closeTechPanel() {
+      techPanel.classList.remove("open");
+      document.body.classList.remove("no-scroll");
+      setTimeout(() => { techPanel.hidden = true; }, 280);
+    }
+
+    document.querySelectorAll(".stack-chip").forEach(chip => {
+      chip.addEventListener("click", () => {
+        openTechPanel(chip.dataset.tech, chip.dataset.desc);
+      });
+    });
+    techPanel.querySelectorAll("[data-close-panel]").forEach(el => {
+      el.addEventListener("click", closeTechPanel);
+    });
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape" && techPanel.classList.contains("open")) closeTechPanel();
+    });
+
+    /* Reveal */
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (!prefersReduced) {
       const reveals = document.querySelectorAll(".reveal");
@@ -476,7 +559,7 @@
             }
           });
         },
-        { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+        { threshold: 0.1, rootMargin: "0px 0px -30px 0px" }
       );
       reveals.forEach(el => observer.observe(el));
     } else {

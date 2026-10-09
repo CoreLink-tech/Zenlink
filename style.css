@@ -1,34 +1,47 @@
 /* =========================================================
    ZENLINK — Software Engineering & Digital Systems
-   Distinctive technical editorial design
+   Nigerian-rooted technical design
+   Forest green · terracotta · warm earth · no neon
 ========================================================= */
 
 :root {
-  --bg:            #07090d;
-  --bg-2:          #0b0e14;
-  --elevated:      #0f131a;
-  --surface:       #141922;
-  --surface-2:     #1a2030;
-  --surface-3:     #1f2736;
+  /* Deep forest + earth — Nigerian warmth, no neon */
+  --bg:            #0a0f0c;
+  --bg-2:          #0f1612;
+  --elevated:      #141c17;
+  --surface:       #1a2420;
+  --surface-2:     #212c27;
+  --surface-3:     #2a3731;
 
-  --ink:           #f3f1eb;
-  --ink-soft:      rgba(243, 241, 235, 0.72);
-  --ink-muted:     rgba(243, 241, 235, 0.52);
-  --ink-faint:     rgba(243, 241, 235, 0.32);
-  --ink-ghost:     rgba(243, 241, 235, 0.1);
+  --ink:           #f2efe6;
+  --ink-soft:      rgba(242, 239, 230, 0.75);
+  --ink-muted:     rgba(242, 239, 230, 0.55);
+  --ink-faint:     rgba(242, 239, 230, 0.35);
+  --ink-ghost:     rgba(242, 239, 230, 0.09);
 
-  --line:          rgba(243, 241, 235, 0.06);
-  --line-mid:      rgba(243, 241, 235, 0.11);
-  --line-strong:   rgba(243, 241, 235, 0.18);
+  --line:          rgba(242, 239, 230, 0.07);
+  --line-mid:      rgba(242, 239, 230, 0.12);
+  --line-strong:   rgba(242, 239, 230, 0.2);
 
-  --accent:        #2dd4bf;
-  --accent-bright: #5eead4;
-  --accent-dim:    rgba(45, 212, 191, 0.1);
-  --accent-glow:   rgba(45, 212, 191, 0.28);
-  --accent-line:   rgba(45, 212, 191, 0.35);
+  /* Primary: deep forest green */
+  --accent:        #3d7a52;
+  --accent-bright: #4f9a68;
+  --accent-dim:    rgba(61, 122, 82, 0.14);
+  --accent-glow:   rgba(61, 122, 82, 0.18);
+  --accent-line:   rgba(61, 122, 82, 0.38);
 
-  --ok:            #4ade80;
-  --amber:         #fbbf24;
+  /* Warm accent: terracotta / laterite */
+  --warm:          #c45c26;
+  --warm-bright:   #d97745;
+  --warm-dim:      rgba(196, 92, 38, 0.14);
+  --warm-line:     rgba(196, 92, 38, 0.32);
+
+  /* Soft gold for quiet highlights */
+  --gold:          #c9a227;
+  --gold-dim:      rgba(201, 162, 39, 0.12);
+
+  --ok:            #5a9e6f;
+  --amber:         #d4a017;
 
   --radius-xs:     6px;
   --radius-sm:     8px;
@@ -67,7 +80,7 @@ button { border: 0; background: none; font: inherit; cursor: pointer; color: inh
 
 ::selection {
   background: var(--accent);
-  color: #07090d;
+  color: #0a0f0c;
 }
 
 .container {
@@ -126,10 +139,12 @@ h1, h2, h3 {
   align-items: center;
   gap: 22px;
 }
-.loader-logo {
-  height: 44px;
-  width: auto;
-  opacity: 0.95;
+.loader-word {
+  font-family: "Sora", system-ui, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--ink);
 }
 .loader-bar {
   display: block;
@@ -170,7 +185,7 @@ h1, h2, h3 {
   transition: background 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
 }
 #navbar.scrolled {
-  background: rgba(7, 9, 13, 0.82);
+  background: rgba(10, 15, 12, 0.88);
   backdrop-filter: blur(20px) saturate(1.2);
   -webkit-backdrop-filter: blur(20px) saturate(1.2);
   border-bottom-color: var(--line-mid);
@@ -187,18 +202,13 @@ h1, h2, h3 {
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 11px;
-}
-.logo-img {
-  height: 30px;
-  width: 30px;
-  object-fit: contain;
-  border-radius: 7px;
 }
 .logo-text {
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-family: "Sora", system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--ink);
 }
 
 .nav-links {
@@ -226,7 +236,7 @@ h1, h2, h3 {
   padding: 10px 18px;
   font-size: 13px;
   font-weight: 600;
-  color: #07090d;
+  color: #0a0f0c;
   background: var(--accent);
   border-radius: var(--radius-sm);
   transition: background 0.2s ease, transform 0.2s var(--ease), box-shadow 0.2s ease;
@@ -234,7 +244,6 @@ h1, h2, h3 {
 .nav-cta:hover {
   background: var(--accent-bright);
   transform: translateY(-1px);
-  box-shadow: 0 10px 28px var(--accent-glow);
 }
 .nav-cta span {
   transition: transform 0.2s var(--ease);
@@ -342,7 +351,7 @@ h1, h2, h3 {
   justify-content: center;
   padding: 16px 24px;
   background: var(--accent);
-  color: #07090d;
+  color: #0a0f0c;
   font-weight: 600;
   font-size: 15px;
   border-radius: 10px;
@@ -372,11 +381,10 @@ h1, h2, h3 {
 
 .btn-primary {
   background: var(--accent);
-  color: #07090d;
+  color: #0a0f0c;
 }
 .btn-primary:hover {
   background: var(--accent-bright);
-  box-shadow: 0 12px 32px var(--accent-glow);
   transform: translateY(-1px);
 }
 
@@ -422,54 +430,31 @@ button:focus-visible {
   overflow: hidden;
 }
 
-.hero-grid {
+/* Subtle geometric pattern inspired by traditional Nigerian motifs */
+.hero-pattern {
   position: absolute;
   inset: 0;
+  opacity: 0.045;
   background-image:
-    linear-gradient(var(--line-mid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--line-mid) 1px, transparent 1px);
-  background-size: 72px 72px;
-  mask-image: radial-gradient(ellipse 85% 70% at 50% 35%, black 15%, transparent 72%);
-  -webkit-mask-image: radial-gradient(ellipse 85% 70% at 50% 35%, black 15%, transparent 72%);
-  opacity: 0.7;
+    /* diamond lattice */
+    linear-gradient(30deg, var(--ink) 1px, transparent 1px),
+    linear-gradient(150deg, var(--ink) 1px, transparent 1px),
+    linear-gradient(30deg, transparent 48%, var(--ink) 49%, var(--ink) 51%, transparent 52%),
+    linear-gradient(150deg, transparent 48%, var(--ink) 49%, var(--ink) 51%, transparent 52%);
+  background-size: 48px 84px, 48px 84px, 96px 168px, 96px 168px;
+  background-position: 0 0, 0 0, 24px 42px, 24px 42px;
+  mask-image: radial-gradient(ellipse 90% 75% at 40% 30%, black 10%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse 90% 75% at 40% 30%, black 10%, transparent 70%);
 }
 
-.hero-orb {
+/* Soft earth wash — warm depth without neon glow */
+.hero-wash {
   position: absolute;
-  border-radius: 50%;
-  filter: blur(80px);
-  pointer-events: none;
-}
-.hero-orb-1 {
-  width: 520px;
-  height: 520px;
-  top: -12%;
-  left: 42%;
-  background: rgba(45, 212, 191, 0.11);
-}
-.hero-orb-2 {
-  width: 380px;
-  height: 380px;
-  bottom: 8%;
-  right: -5%;
-  background: rgba(45, 212, 191, 0.05);
-}
-
-.hero-scan {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--accent-line), transparent);
-  opacity: 0.5;
-  animation: scanline 8s linear infinite;
-}
-@keyframes scanline {
-  0% { transform: translateY(0); opacity: 0; }
-  8% { opacity: 0.45; }
-  92% { opacity: 0.45; }
-  100% { transform: translateY(100vh); opacity: 0; }
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 55% at 20% 20%, rgba(61, 122, 82, 0.09), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 85% 70%, rgba(196, 92, 38, 0.06), transparent 55%),
+    radial-gradient(ellipse 40% 30% at 60% 10%, rgba(201, 162, 39, 0.04), transparent 50%);
 }
 
 .hero-inner {
@@ -498,13 +483,13 @@ button:focus-visible {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 3px var(--accent-dim);
-  animation: pulse 2.4s ease infinite;
+  background: var(--warm);
+  box-shadow: 0 0 0 3px var(--warm-dim);
+  animation: pulse 2.8s ease infinite;
 }
 @keyframes pulse {
-  0%, 100% { box-shadow: 0 0 0 3px var(--accent-dim); }
-  50% { box-shadow: 0 0 0 6px transparent; }
+  0%, 100% { box-shadow: 0 0 0 3px var(--warm-dim); }
+  50% { box-shadow: 0 0 0 5px transparent; }
 }
 
 .hero h1 {
@@ -513,7 +498,7 @@ button:focus-visible {
   max-width: 14ch;
 }
 .hero-accent {
-  color: var(--accent-bright);
+  color: var(--warm-bright);
   position: relative;
 }
 
@@ -542,7 +527,7 @@ button:focus-visible {
   flex-direction: column;
   gap: 4px;
   padding: 14px 20px;
-  background: rgba(15, 19, 26, 0.7);
+  background: rgba(20, 28, 23, 0.75);
   border: 1px solid var(--line-mid);
   border-radius: var(--radius);
   backdrop-filter: blur(8px);
@@ -754,8 +739,9 @@ button:focus-visible {
 
 .project-featured-visual {
   background:
-    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(45, 212, 191, 0.06), transparent),
-    #080a0e;
+    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(61, 122, 82, 0.08), transparent),
+    radial-gradient(ellipse 40% 30% at 10% 10%, rgba(196, 92, 38, 0.05), transparent),
+    #0c1210;
   padding: 36px 32px;
   display: flex;
   align-items: center;
@@ -766,7 +752,7 @@ button:focus-visible {
 .terminal {
   width: 100%;
   max-width: 440px;
-  background: #0a0d12;
+  background: #0c1210;
   border: 1px solid var(--line-strong);
   border-radius: 12px;
   overflow: hidden;
@@ -1192,7 +1178,8 @@ button:focus-visible {
 .contact-panel {
   position: relative;
   background:
-    radial-gradient(ellipse 70% 80% at 90% 20%, rgba(45, 212, 191, 0.07), transparent 50%),
+    radial-gradient(ellipse 70% 80% at 90% 20%, rgba(61, 122, 82, 0.08), transparent 50%),
+    radial-gradient(ellipse 40% 50% at 10% 80%, rgba(196, 92, 38, 0.05), transparent 45%),
     var(--elevated);
   border: 1px solid var(--line-mid);
   border-radius: var(--radius-xl);
@@ -1321,7 +1308,6 @@ button:focus-visible {
   html { scroll-behavior: auto; }
   .btn span,
   .nav-cta span { transition: none; }
-  .hero-scan,
   .badge-dot,
   .strip-track,
   .loader-bar::after { animation: none; }
@@ -1403,4 +1389,17 @@ button:focus-visible {
 @media (max-width: 380px) {
   .hero h1 { font-size: 32px; }
   .btn { padding: 12px 16px; font-size: 13.5px; }
+}
+
+
+/* =========================================================
+   NIGERIAN WARMTH UTILITIES
+========================================================= */
+
+.text-warm { color: var(--warm-bright); }
+.text-gold { color: var(--gold); }
+
+.service-card:hover .service-line,
+.project-card:hover {
+  border-color: var(--accent-line);
 }

@@ -479,6 +479,37 @@ button:focus-visible {
   transform: skewX(-12deg);
 }
 
+.hero-flag {
+  position: absolute;
+  right: 4%;
+  bottom: 8%;
+  height: min(52vh, 420px);
+  width: auto;
+  object-fit: contain;
+  opacity: 0.18;
+  pointer-events: none;
+  user-select: none;
+  filter: drop-shadow(0 12px 28px rgba(26, 31, 28, 0.08));
+  z-index: 0;
+}
+
+@media (max-width: 980px) {
+  .hero-flag {
+    right: -2%;
+    bottom: 4%;
+    height: min(40vh, 280px);
+    opacity: 0.12;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-flag {
+    height: min(32vh, 200px);
+    opacity: 0.1;
+    right: -8%;
+  }
+}
+
 .hero-inner {
   position: relative;
   z-index: 1;
